@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "D:/TUC_PROJECT/TUC_Computer_Architecture/Lab1/T_ROTR_isim_beh.exe" -prj "D:/TUC_PROJECT/TUC_Computer_Architecture/Lab1/T_ROTR_beh.prj" "work.T_ROTR" 
