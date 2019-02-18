@@ -22,6 +22,7 @@
   <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="Lab1.xise"/>
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="ALU_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ALU_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="AND32BIT_stx_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Addition32BIT_isim_beh.exe"/>
@@ -32,15 +33,17 @@
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="SRARITH32BIT_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="SRLOGIC_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Subtraction32BIT_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="T_ALU_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="T_ALU_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="T_ALU_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="T_ALU_stx_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="T_AND32BIT_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="T_AND32BIT_stx_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="T_Addition32BIT_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="T_Addition32BIT_stx_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="T_OR32BIT_isim_beh.exe"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="T_ROTL_isim_beh.exe"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="T_ROTR_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="T_ROTR_isim_beh.exe"/>
-    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="T_ROTR_isim_beh.wdb"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="T_SLLOGIC_isim_beh.exe"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="T_SRARITH32BIT_isim_beh.exe"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="T_SRLOGIC_isim_beh.exe"/>
@@ -62,9 +65,13 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1550456892" xil_pn:in_ck="-5044875592288250402" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1550456892">
+    <transform xil_pn:end_ts="1550515632" xil_pn:in_ck="3516401651764069315" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1550515631">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="ALU.vhd"/>
       <outfile xil_pn:name="AND32BIT.vhd"/>
       <outfile xil_pn:name="Addition32BIT.vhd"/>
@@ -75,6 +82,7 @@
       <outfile xil_pn:name="SRARITH32BIT.vhd"/>
       <outfile xil_pn:name="SRLOGIC.vhd"/>
       <outfile xil_pn:name="Subtraction32BIT.vhd"/>
+      <outfile xil_pn:name="T_ALU.vhd"/>
       <outfile xil_pn:name="T_AND32BIT.vhd"/>
       <outfile xil_pn:name="T_Addition32BIT.vhd"/>
       <outfile xil_pn:name="T_OR32BIT.vhd"/>
@@ -85,12 +93,12 @@
       <outfile xil_pn:name="T_SRLOGIC.vhd"/>
       <outfile xil_pn:name="T_Substraction32BIT.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1550451134" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="7526947206288227024" xil_pn:start_ts="1550451134">
+    <transform xil_pn:end_ts="1550515582" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-7525640527649570901" xil_pn:start_ts="1550515582">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForProperties"/>
     </transform>
-    <transform xil_pn:end_ts="1550451134" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="7207358742310321362" xil_pn:start_ts="1550451134">
+    <transform xil_pn:end_ts="1550515582" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-6947798129476289939" xil_pn:start_ts="1550515582">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForProperties"/>
@@ -99,12 +107,15 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1550451134" xil_pn:in_ck="-7769642689107886772" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1550451134">
+    <transform xil_pn:end_ts="1550515632" xil_pn:in_ck="3516401651764069315" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1550515632">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="ALU.vhd"/>
       <outfile xil_pn:name="AND32BIT.vhd"/>
       <outfile xil_pn:name="Addition32BIT.vhd"/>
       <outfile xil_pn:name="OR32BIT.vhd"/>
@@ -114,6 +125,7 @@
       <outfile xil_pn:name="SRARITH32BIT.vhd"/>
       <outfile xil_pn:name="SRLOGIC.vhd"/>
       <outfile xil_pn:name="Subtraction32BIT.vhd"/>
+      <outfile xil_pn:name="T_ALU.vhd"/>
       <outfile xil_pn:name="T_AND32BIT.vhd"/>
       <outfile xil_pn:name="T_Addition32BIT.vhd"/>
       <outfile xil_pn:name="T_OR32BIT.vhd"/>
@@ -124,28 +136,30 @@
       <outfile xil_pn:name="T_SRLOGIC.vhd"/>
       <outfile xil_pn:name="T_Substraction32BIT.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1550451136" xil_pn:in_ck="-7769642689107886772" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-6477250640309646206" xil_pn:start_ts="1550451134">
+    <transform xil_pn:end_ts="1550515635" xil_pn:in_ck="3516401651764069315" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="1607098598464348024" xil_pn:start_ts="1550515632">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForProperties"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="T_ROTR_beh.prj"/>
-      <outfile xil_pn:name="T_ROTR_isim_beh.exe"/>
+      <outfile xil_pn:name="T_ALU_beh.prj"/>
+      <outfile xil_pn:name="T_ALU_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1550451136" xil_pn:in_ck="-6643191092111702325" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-5245143984847010097" xil_pn:start_ts="1550451136">
+    <transform xil_pn:end_ts="1550515636" xil_pn:in_ck="941766181957142752" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-3693185006735137531" xil_pn:start_ts="1550515635">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForProperties"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="T_ROTR_isim_beh.wdb"/>
+      <outfile xil_pn:name="T_ALU_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
     </transform>

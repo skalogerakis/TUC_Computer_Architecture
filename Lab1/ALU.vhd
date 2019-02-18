@@ -112,96 +112,133 @@ COMPONENT ROTR
         );
 END COMPONENT;
 
-signal OUTPUT : std_logic_vector (31 downto 0) := (others => '0');
+--NEEDED FOR ADDITION COMPONENT
+signal ADDEXIT : std_logic_vector (31 downto 0);
+signal ADDC: std_logic ;
+signal ADDVF : std_logic ;
 
-signal NOT32 : std_logic_vector (31 downto 0);
+--NEEDED FOR SUBTRACTION COMPONENT
+signal SUBEXIT : std_logic_vector (31 downto 0);
+signal SUBC: std_logic;
+signal SUBVF : std_logic;
+
+--NEEDED FOR AND32 COMPONENT
+signal ANDEXIT : std_logic_vector (31 downto 0);
+
+--NEEDED FOR OR32 COMPONENT
+signal OREXIT : std_logic_vector (31 downto 0);
+
+--NEEDED FOR SRARITH COMPONENT
+signal SRAREXIT : std_logic_vector (31 downto 0);
+
+--NEEDED FOR SRLO COMPONENT
+signal SRLOEXIT : std_logic_vector (31 downto 0);
+
+--NEEDED FOR SLLO COMPONENT
+signal SLLOEXIT : std_logic_vector (31 downto 0);
+
+--NEEDED FOR RTL COMPONENT
+signal RTLEXIT : std_logic_vector (31 downto 0);
+
+--NEEDED FOR RTR COMPONENT
+signal RTREXIT : std_logic_vector (31 downto 0);
+
+--NEEDED FOR OUR CHECKS
+signal OUTPUT : std_logic_vector (31 downto 0) := (others => '0');
+CONSTANT ZEROOUTPUT : std_logic_vector (31 downto 0) := (others => '0');	--SWITCHED TO CONSTANT TO AVOID ERROR
+
+
+signal NOTEXIT : std_logic_vector (31 downto 0);
 
 begin
 
 ADD : Addition32BIT PORT MAP(
-         ADDA => ADDA,
-         ADDB => ADDB,
-         ADDOUT => ADDOUT,
-         ADDCOUT => ADDCOUT,
-         ADDOVF => ADDOVF
+         ADDA => ALUA,
+         ADDB => ALUB,
+         ADDOUT => ADDEXIT,
+         ADDCOUT => ADDC,
+         ADDOVF => ADDVF
         );
 
 SUB: Subtraction32BIT PORT MAP(
-         SUBA => SUBA,
-         SUBB => SUBB,
-         SUBOUT =>SUBOUT,
-         SUBCOUT =>SUBCOUT,
-         SUBOVF =>SUBOVF
+         SUBA => ALUA,
+         SUBB => ALUB,
+         SUBOUT =>SUBEXIT,
+         SUBCOUT =>SUBC,
+         SUBOVF =>SUBVF
         );
 
 AND32: AND32BIT PORT MAP(
-         ANDA => ANDA,
-         ANDB => ANDB,
-         OUTA => OUTA
+         ANDA => ALUA,
+         ANDB => ALUB,
+         OUTA => ANDEXIT
         );
 
 OR32: OR32BIT PORT MAP(
-         ORA => ORA,
-         ORB  => ORB,
-         OROUT => OROUT
+         ORA => ALUA,
+         ORB  => ALUB,
+         OROUT => OREXIT
         );
 		  
 SRARITH: SRARITH32BIT PORT MAP(
-         SRARITHA => SRARITHA,
-         SRARITHOUT => SRARITHOUT
+         SRARITHA => ALUA,
+         SRARITHOUT => SRAREXIT
         );
 
 SRLO: SRLOGIC PORT MAP(
-         SRLOGICA => SRLOGICA,
-         SRLOGICOUT => SRLOGICOUT
+         SRLOGICA => ALUA,
+         SRLOGICOUT => SRLOEXIT
         );
 
 SLLO: SLLOGIC PORT MAP(
-         SLLOGICA  => SLLOGICA,
-         SLLOGICOUT => SLLOGICOUT
+         SLLOGICA  => ALUA,
+         SLLOGICOUT => SLLOEXIT
         );
 
 RTL :ROTL PORT MAP(
-         ROTLA => ROTLA,
-         ROTLOUT => RORLOUT
+         ROTLA => ALUA,
+         ROTLOUT => RTLEXIT
         );
 
 RTR: ROTR PORT MAP(
-         ROTRA => ROTRA,
-         ROTROUT =>ROTROUT
+         ROTRA => ALUA,
+         ROTROUT =>RTREXIT
         );
-NOT32 <= NOT ALUA AFTER 10 NS ;
+		  
+NOTEXIT <= NOT ALUA AFTER 10 NS ;
   
 WITH ALUOP SELECT
-	OUTPUT <= ADDOUT WHEN "0000",
-					SUBOUT WHEN "0001",
-					OUTA WHEN "0010",
-					OROUT WHEN "0011",
-					NOT32 WHEN "0100",
-					SRARITHOUT WHEN "1000",
-					SRLOGICOUT WHEN "1001",
-					SLLOGICOUT WHEN "1010",
-					ROTLOUT WHEN "1100",
-					ROTLOUT WHEN "1101",
+	OUTPUT <= ADDEXIT WHEN "0000",
+					SUBEXIT WHEN "0001",
+					ANDEXIT WHEN "0010",
+					OREXIT WHEN "0011",
+					NOTEXIT WHEN "0100",
+					SRAREXIT WHEN "1000",
+					SRLOEXIT WHEN "1001",
+					SLLOEXIT WHEN "1010",
+					RTLEXIT WHEN "1100",
+					RTREXIT WHEN "1101",
 					OUTPUT WHEN OTHERS;
 
 WITH ALUOP SELECT
-	ALUCOUT <= ADDCOUT WHEN "0000",
-				SUBCOUT WHEN "0001",
+	ALUCOUT <= ADDC WHEN "0000",
+				SUBC WHEN "0001",
 				'0' WHEN OTHERS;
 				
 WITH ALUOP SELECT
-	ALUOVF <= ADDOVF WHEN "0000",
-				SUBOVF WHEN "0001",
+	ALUOVF <= ADDVF WHEN "0000",
+				SUBVF WHEN "0001",
 				'0' WHEN OTHERS;
 
 ALUOUT <= OUTPUT;
+
 --CASE OUTPUT IS ZERO THEN VALUE ALUZERO IS ASSIGNED WITH ONE
 --ZERO OTHERWISE
-IF OUTPUT == "00000000000000000000000000000000" THEN
-	ALUZERO = '1';
-ELSE
-	ALUZERO = '0';
-END IF;
+
+WITH OUTPUT SELECT
+	ALUZERO <= '1' WHEN ZEROOUTPUT,
+				'0' WHEN OTHERS;
+
+
 end Behavioral;
 
