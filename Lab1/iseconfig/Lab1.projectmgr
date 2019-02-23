@@ -77,22 +77,20 @@
    <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
-         <ClosedNode>/T_Addition32BIT - behavior D:|TUC_PROJECT|TUC_Computer_Architecture|Lab1|T_Addition32BIT.vhd</ClosedNode>
          <ClosedNode>/T_OR32BIT - behavior D:|TUC_PROJECT|TUC_Computer_Architecture|Lab1|T_OR32BIT.vhd</ClosedNode>
          <ClosedNode>/T_ROTR - behavior D:|TUC_PROJECT|TUC_Computer_Architecture|Lab1|T_ROTR.vhd</ClosedNode>
          <ClosedNode>/T_SLLOGIC - behavior D:|TUC_PROJECT|TUC_Computer_Architecture|Lab1|T_SLLOGIC.vhd</ClosedNode>
          <ClosedNode>/T_SRARITH32BIT - behavior D:|TUC_PROJECT|TUC_Computer_Architecture|Lab1|T_SRARITH32BIT.vhd</ClosedNode>
          <ClosedNode>/T_SRLOGIC - behavior D:|TUC_PROJECT|TUC_Computer_Architecture|Lab1|T_SRLOGIC.vhd</ClosedNode>
-         <ClosedNode>/T_Substraction32BIT - behavior D:|TUC_PROJECT|TUC_Computer_Architecture|Lab1|T_Substraction32BIT.vhd</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>uut - ALU - Behavioral (D:/TUC_PROJECT/TUC_Computer_Architecture/Lab1/ALU.vhd)</SelectedItem>
+         <SelectedItem>T_ALU - behavior (D:/TUC_PROJECT/TUC_Computer_Architecture/Lab1/T_ALU.vhd)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001a4000000020000000000000000000000000200000064ffffffff000000810000000300000002000001a40000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>uut - ALU - Behavioral (D:/TUC_PROJECT/TUC_Computer_Architecture/Lab1/ALU.vhd)</CurrentItem>
+      <CurrentItem>T_ALU - behavior (D:/TUC_PROJECT/TUC_Computer_Architecture/Lab1/T_ALU.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -100,25 +98,25 @@
          <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem/>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000c9000000010000000100000000000000000000000064ffffffff000000810000000000000001000000c90000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem/>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem>ISim Simulator</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000c9000000010000000100000000000000000000000064ffffffff000000810000000000000001000000c90000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem>ISim Simulator</CurrentItem>
    </ItemView>
 </Project>

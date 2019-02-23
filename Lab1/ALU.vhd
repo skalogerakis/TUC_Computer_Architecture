@@ -115,12 +115,12 @@ END COMPONENT;
 --NEEDED FOR ADDITION COMPONENT
 signal ADDEXIT : std_logic_vector (31 downto 0);
 signal ADDC: std_logic ;
-signal ADDVF : std_logic ;
+signal ADDVF : std_logic := '0' ;
 
 --NEEDED FOR SUBTRACTION COMPONENT
 signal SUBEXIT : std_logic_vector (31 downto 0);
 signal SUBC: std_logic;
-signal SUBVF : std_logic;
+signal SUBVF : std_logic := '0';
 
 --NEEDED FOR AND32 COMPONENT
 signal ANDEXIT : std_logic_vector (31 downto 0);

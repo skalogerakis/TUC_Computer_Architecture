@@ -1,0 +1,71 @@
+V3 39
+FL D:/TUC_PROJECT/TUC_Computer_Architecture/Lab1/Addition32BIT.vhd 2019/02/18.01:47:49 P.20131013
+EN work/Addition32BIT 1550950521 \
+      FL D:/TUC_PROJECT/TUC_Computer_Architecture/Lab1/Addition32BIT.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_SIGNED 1381692178 \
+      PB ieee/std_logic_arith 1381692177 PB ieee/NUMERIC_BIT 1381692180 \
+      PB ieee/NUMERIC_STD 1381692181
+AR work/Addition32BIT/Behavioral 1550950522 \
+      FL D:/TUC_PROJECT/TUC_Computer_Architecture/Lab1/Addition32BIT.vhd \
+      EN work/Addition32BIT 1550950521
+FL D:/TUC_PROJECT/TUC_Computer_Architecture/Lab1/ALU.vhd 2019/02/18.20:49:16 P.20131013
+EN work/ALU 1550950539 FL D:/TUC_PROJECT/TUC_Computer_Architecture/Lab1/ALU.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/ALU/Behavioral 1550950540 \
+      FL D:/TUC_PROJECT/TUC_Computer_Architecture/Lab1/ALU.vhd EN work/ALU 1550950539 \
+      CP Addition32BIT CP Subtraction32BIT CP AND32BIT CP OR32BIT CP SRARITH32BIT \
+      CP SRLOGIC CP SLLOGIC CP ROTL CP ROTR
+FL D:/TUC_PROJECT/TUC_Computer_Architecture/Lab1/AND32BIT.vhd 2019/02/18.02:04:08 P.20131013
+EN work/AND32BIT 1550950525 \
+      FL D:/TUC_PROJECT/TUC_Computer_Architecture/Lab1/AND32BIT.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/AND32BIT/Behavioral 1550950526 \
+      FL D:/TUC_PROJECT/TUC_Computer_Architecture/Lab1/AND32BIT.vhd \
+      EN work/AND32BIT 1550950525
+FL D:/TUC_PROJECT/TUC_Computer_Architecture/Lab1/OR32BIT.vhd 2019/02/18.02:06:16 P.20131013
+EN work/OR32BIT 1550950527 \
+      FL D:/TUC_PROJECT/TUC_Computer_Architecture/Lab1/OR32BIT.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/OR32BIT/Behavioral 1550950528 \
+      FL D:/TUC_PROJECT/TUC_Computer_Architecture/Lab1/OR32BIT.vhd \
+      EN work/OR32BIT 1550950527
+FL D:/TUC_PROJECT/TUC_Computer_Architecture/Lab1/ROTL.vhd 2019/02/18.02:44:00 P.20131013
+EN work/ROTL 1550950535 FL D:/TUC_PROJECT/TUC_Computer_Architecture/Lab1/ROTL.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/ROTL/Behavioral 1550950536 \
+      FL D:/TUC_PROJECT/TUC_Computer_Architecture/Lab1/ROTL.vhd EN work/ROTL 1550950535
+FL D:/TUC_PROJECT/TUC_Computer_Architecture/Lab1/ROTR.vhd 2019/02/18.02:50:06 P.20131013
+EN work/ROTR 1550950537 FL D:/TUC_PROJECT/TUC_Computer_Architecture/Lab1/ROTR.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/ROTR/Behavioral 1550950538 \
+      FL D:/TUC_PROJECT/TUC_Computer_Architecture/Lab1/ROTR.vhd EN work/ROTR 1550950537
+FL D:/TUC_PROJECT/TUC_Computer_Architecture/Lab1/SLLOGIC.vhd 2019/02/18.02:37:57 P.20131013
+EN work/SLLOGIC 1550950533 \
+      FL D:/TUC_PROJECT/TUC_Computer_Architecture/Lab1/SLLOGIC.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/SLLOGIC/Behavioral 1550950534 \
+      FL D:/TUC_PROJECT/TUC_Computer_Architecture/Lab1/SLLOGIC.vhd \
+      EN work/SLLOGIC 1550950533
+FL D:/TUC_PROJECT/TUC_Computer_Architecture/Lab1/SRARITH32BIT.vhd 2019/02/18.02:25:52 P.20131013
+EN work/SRARITH32BIT 1550950529 \
+      FL D:/TUC_PROJECT/TUC_Computer_Architecture/Lab1/SRARITH32BIT.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/SRARITH32BIT/Behavioral 1550950530 \
+      FL D:/TUC_PROJECT/TUC_Computer_Architecture/Lab1/SRARITH32BIT.vhd \
+      EN work/SRARITH32BIT 1550950529
+FL D:/TUC_PROJECT/TUC_Computer_Architecture/Lab1/SRLOGIC.vhd 2019/02/18.02:33:06 P.20131013
+EN work/SRLOGIC 1550950531 \
+      FL D:/TUC_PROJECT/TUC_Computer_Architecture/Lab1/SRLOGIC.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/SRLOGIC/Behavioral 1550950532 \
+      FL D:/TUC_PROJECT/TUC_Computer_Architecture/Lab1/SRLOGIC.vhd \
+      EN work/SRLOGIC 1550950531
+FL D:/TUC_PROJECT/TUC_Computer_Architecture/Lab1/Subtraction32BIT.vhd 2019/02/18.01:47:49 P.20131013
+EN work/Subtraction32BIT 1550950523 \
+      FL D:/TUC_PROJECT/TUC_Computer_Architecture/Lab1/Subtraction32BIT.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_SIGNED 1381692178 \
+      PB ieee/std_logic_arith 1381692177 PB ieee/NUMERIC_BIT 1381692180 \
+      PB ieee/NUMERIC_STD 1381692181
+AR work/Subtraction32BIT/Behavioral 1550950524 \
+      FL D:/TUC_PROJECT/TUC_Computer_Architecture/Lab1/Subtraction32BIT.vhd \
+      EN work/Subtraction32BIT 1550950523
