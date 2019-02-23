@@ -38,7 +38,7 @@ entity Addition32BIT is
            ADDB : in  STD_LOGIC_VECTOR (31 downto 0);
            ADDOUT : out  STD_LOGIC_VECTOR (31 downto 0);
            ADDCOUT : out  STD_LOGIC;
-           ADDOVF : out  STD_LOGIC);
+           ADDOVF : out  STD_LOGIC := '0');
 end Addition32BIT;
 
 architecture Behavioral of Addition32BIT is
