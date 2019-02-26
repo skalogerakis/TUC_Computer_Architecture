@@ -1,0 +1,2 @@
+ISim log file
+Running: D:\TUC_PROJECT\TUC_Computer_Architecture\Lab1\lab1_RegisterFile\decoder5x32_TEST_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb D:/TUC_PROJECT/TUC_Computer_Architecture/Lab1/lab1_RegisterFile/decoder5x32_TEST_isim_beh.wdb 

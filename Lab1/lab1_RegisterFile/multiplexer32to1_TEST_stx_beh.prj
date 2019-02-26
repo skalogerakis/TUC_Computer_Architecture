@@ -1,0 +1,2 @@
+vhdl isim_temp "multiplexer32to1.vhd"
+vhdl isim_temp "multiplexer32to1_TEST.vhd"

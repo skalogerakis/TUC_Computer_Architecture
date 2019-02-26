@@ -1,0 +1,6 @@
+[Inputs]
+=muxIN[1023:0]=
+=muxSEL[4:0]=
+[Outputs]
+=muxOUT[31:0]=
+[BiDir]
