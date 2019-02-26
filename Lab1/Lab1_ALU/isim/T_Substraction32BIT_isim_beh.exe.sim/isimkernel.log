@@ -2,14 +2,14 @@ Command line:
    T_Substraction32BIT_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  56100
+     -socket  64319
 
-Sat Feb 23 23:54:03 2019
+Wed Feb 27 01:21:15 2019
 
 
- Elaboration Time: 0.046875 sec
+ Elaboration Time: 0.0625 sec
 
- Current Memory Usage: 5331.06 Meg
+ Current Memory Usage: 5331.64 Meg
 
  Total Signals          : 13
  Total Nets             : 197
@@ -23,7 +23,7 @@ Total Line Count : 17
 
  Total Simulation Time: 0.0625 sec
 
- Current Memory Usage: 5331.06 Meg
+ Current Memory Usage: 5331.64 Meg
 
-Sat Feb 23 23:54:28 2019
+Wed Feb 27 01:21:20 2019
 

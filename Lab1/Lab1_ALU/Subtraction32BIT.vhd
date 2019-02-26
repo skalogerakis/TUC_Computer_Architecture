@@ -36,9 +36,9 @@ use IEEE.NUMERIC_STD.all;
 entity Subtraction32BIT is
     Port ( SUBA : in  STD_LOGIC_VECTOR (31 downto 0);
            SUBB : in  STD_LOGIC_VECTOR (31 downto 0);
-           SUBOUT : out  STD_LOGIC_VECTOR (31 downto 0);
-           SUBCOUT : out  STD_LOGIC;
-           SUBOVF : out  STD_LOGIC);
+           SUBOUT : out  STD_LOGIC_VECTOR (31 downto 0) := (OTHERS => '0');
+           SUBCOUT : out  STD_LOGIC := '0' ;
+           SUBOVF : out  STD_LOGIC := '0');
 end Subtraction32BIT;
 
 architecture Behavioral of Subtraction32BIT is

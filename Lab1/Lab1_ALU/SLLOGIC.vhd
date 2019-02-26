@@ -31,7 +31,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity SLLOGIC is
     Port ( SLLOGICA : in  STD_LOGIC_VECTOR (31 downto 0);
-           SLLOGICOUT : out  STD_LOGIC_VECTOR (31 downto 0));
+           SLLOGICOUT : out  STD_LOGIC_VECTOR (31 downto 0):= (OTHERS => '0'));
 end SLLOGIC;
 
 architecture Behavioral of SLLOGIC is

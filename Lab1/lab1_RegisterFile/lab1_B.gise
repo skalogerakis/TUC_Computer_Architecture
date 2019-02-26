@@ -27,9 +27,7 @@
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="decoder2x4_TEST_isim_beh.exe"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="decoder5x32_TEST_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="decoder5x32_TEST_isim_beh.exe"/>
-    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="decoder5x32_TEST_isim_beh.wdb"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
@@ -53,7 +51,11 @@
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="multiplexer1024to32_ngdbuild.xrpt"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="multiplexer1024to32_summary.html"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="multiplexer1024to32_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="register_file_TEST_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="register_file_TEST_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="register_file_TEST_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="register_file_TEST_stx_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="register_file_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
@@ -65,9 +67,13 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1551183755" xil_pn:in_ck="-2385471509753851207" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1551183755">
+    <transform xil_pn:end_ts="1551195173" xil_pn:in_ck="-2385471509753851207" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1551195173">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="decoder2x4.vhd"/>
       <outfile xil_pn:name="decoder2x4_TEST.vhd"/>
       <outfile xil_pn:name="decoder3x8.vhd"/>
@@ -82,11 +88,11 @@
       <outfile xil_pn:name="register_file.vhd"/>
       <outfile xil_pn:name="register_file_TEST.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1551184358" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="172640869336373895" xil_pn:start_ts="1551184358">
+    <transform xil_pn:end_ts="1551194134" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-5465534281638256029" xil_pn:start_ts="1551194134">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1551184358" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="2335804724887330885" xil_pn:start_ts="1551184358">
+    <transform xil_pn:end_ts="1551194134" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="5170020628291117089" xil_pn:start_ts="1551194134">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
@@ -94,9 +100,14 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1551183755" xil_pn:in_ck="-2385471509753851207" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1551183755">
+    <transform xil_pn:end_ts="1551195173" xil_pn:in_ck="-2385471509753851207" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1551195173">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="decoder2x4.vhd"/>
       <outfile xil_pn:name="decoder2x4_TEST.vhd"/>
       <outfile xil_pn:name="decoder3x8.vhd"/>
@@ -111,22 +122,30 @@
       <outfile xil_pn:name="register_file.vhd"/>
       <outfile xil_pn:name="register_file_TEST.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1551184362" xil_pn:in_ck="-2385471509753851207" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-4956453105930246044" xil_pn:start_ts="1551184358">
+    <transform xil_pn:end_ts="1551195177" xil_pn:in_ck="-2385471509753851207" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-6152215473031890980" xil_pn:start_ts="1551195173">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="decoder5x32_TEST_beh.prj"/>
-      <outfile xil_pn:name="decoder5x32_TEST_isim_beh.exe"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
       <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="register_file_TEST_beh.prj"/>
+      <outfile xil_pn:name="register_file_TEST_isim_beh.exe"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1551184362" xil_pn:in_ck="2226502984485325770" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-2331359326430942777" xil_pn:start_ts="1551184362">
+    <transform xil_pn:end_ts="1551195178" xil_pn:in_ck="-8970075358828422659" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="8224569243938048639" xil_pn:start_ts="1551195177">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="decoder5x32_TEST_isim_beh.wdb"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="register_file_TEST_isim_beh.wdb"/>
     </transform>
     <transform xil_pn:end_ts="1551183887" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1551183887">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -160,6 +179,8 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
       <outfile xil_pn:name="multiplexer1024to32.lso"/>
       <outfile xil_pn:name="multiplexer1024to32.ngc"/>
@@ -181,6 +202,7 @@
     <transform xil_pn:end_ts="1551183903" xil_pn:in_ck="3585361567071405293" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="5815162420758249025" xil_pn:start_ts="1551183896">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
       <outfile xil_pn:name="multiplexer1024to32.bld"/>
@@ -190,6 +212,7 @@
     <transform xil_pn:end_ts="1551183912" xil_pn:in_ck="-1065741262783124431" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="304711778406361947" xil_pn:start_ts="1551183903">
       <status xil_pn:value="FailedRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
       <outfile xil_pn:name="multiplexer1024to32_map.map"/>
       <outfile xil_pn:name="multiplexer1024to32_map.mrp"/>

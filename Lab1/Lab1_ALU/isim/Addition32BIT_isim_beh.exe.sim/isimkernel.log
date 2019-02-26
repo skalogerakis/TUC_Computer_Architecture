@@ -2,14 +2,14 @@ Command line:
    Addition32BIT_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  56112
+     -socket  64307
 
-Sat Feb 23 23:59:00 2019
+Wed Feb 27 01:19:31 2019
 
 
- Elaboration Time: 0.0625 sec
+ Elaboration Time: 0.046875 sec
 
- Current Memory Usage: 5331.04 Meg
+ Current Memory Usage: 5331.63 Meg
 
  Total Signals          : 8
  Total Nets             : 197
@@ -21,9 +21,9 @@ Sat Feb 23 23:59:00 2019
  Total Scalar Nets and Variables : 698
 Total Line Count : 6
 
- Total Simulation Time: 0.078125 sec
+ Total Simulation Time: 0.046875 sec
 
- Current Memory Usage: 5331.04 Meg
+ Current Memory Usage: 5331.63 Meg
 
-Sat Feb 23 23:59:03 2019
+Wed Feb 27 01:19:34 2019
 

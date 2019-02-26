@@ -31,7 +31,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity SRLOGIC is
     Port ( SRLOGICA : in  STD_LOGIC_VECTOR (31 downto 0);
-           SRLOGICOUT : out  STD_LOGIC_VECTOR (31 downto 0));
+           SRLOGICOUT : out  STD_LOGIC_VECTOR (31 downto 0):= (OTHERS => '0'));
 end SRLOGIC;
 
 architecture Behavioral of SRLOGIC is

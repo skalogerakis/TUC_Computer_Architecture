@@ -1,12 +1,15 @@
-Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o D:/TUC_PROJECT/TUC_Computer_Architecture/Lab1/lab1_RegisterFile/decoder5x32_TEST_isim_beh.exe -prj D:/TUC_PROJECT/TUC_Computer_Architecture/Lab1/lab1_RegisterFile/decoder5x32_TEST_beh.prj work.decoder5x32_TEST 
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o D:/TUC_PROJECT/TUC_Computer_Architecture/Lab1/lab1_RegisterFile/register_file_TEST_isim_beh.exe -prj D:/TUC_PROJECT/TUC_Computer_Architecture/Lab1/lab1_RegisterFile/register_file_TEST_beh.prj work.register_file_TEST 
 ISim P.20131013 (signature 0x7708f090)
 Number of CPUs detected in this system: 4
 Turning on mult-threading, number of parallel sub-compilation jobs: 8 
 Determining compilation order of HDL files
 Parsing VHDL file "D:/TUC_PROJECT/TUC_Computer_Architecture/Lab1/lab1_RegisterFile/decoder3x8.vhd" into library work
 Parsing VHDL file "D:/TUC_PROJECT/TUC_Computer_Architecture/Lab1/lab1_RegisterFile/decoder2x4.vhd" into library work
+Parsing VHDL file "D:/TUC_PROJECT/TUC_Computer_Architecture/Lab1/lab1_RegisterFile/regist.vhd" into library work
+Parsing VHDL file "D:/TUC_PROJECT/TUC_Computer_Architecture/Lab1/lab1_RegisterFile/multiplexer32to1.vhd" into library work
 Parsing VHDL file "D:/TUC_PROJECT/TUC_Computer_Architecture/Lab1/lab1_RegisterFile/decoder5x8.vhd" into library work
-Parsing VHDL file "D:/TUC_PROJECT/TUC_Computer_Architecture/Lab1/lab1_RegisterFile/decoder5x32_TEST.vhd" into library work
+Parsing VHDL file "D:/TUC_PROJECT/TUC_Computer_Architecture/Lab1/lab1_RegisterFile/register_file.vhd" into library work
+Parsing VHDL file "D:/TUC_PROJECT/TUC_Computer_Architecture/Lab1/lab1_RegisterFile/register_file_TEST.vhd" into library work
 Starting static elaboration
 Completed static elaboration
 Compiling package standard
@@ -16,10 +19,13 @@ Compiling package std_logic_unsigned
 Compiling architecture bhv of entity decoder2x4 [decoder2x4_default]
 Compiling architecture behavioral of entity decoder3x8 [decoder3x8_default]
 Compiling architecture behavioral of entity decoder5x32 [decoder5x32_default]
-Compiling architecture behavior of entity decoder5x32_test
+Compiling architecture mux of entity multiplexer32to1 [multiplexer32to1_default]
+Compiling architecture behavior of entity regist [regist_default]
+Compiling architecture behavioral of entity register_file [register_file_default]
+Compiling architecture behavior of entity register_file_test
 Time Resolution for simulation is 1ps.
-Waiting for 1 sub-compilation(s) to finish...
-Compiled 11 VHDL Units
-Built simulation executable D:/TUC_PROJECT/TUC_Computer_Architecture/Lab1/lab1_RegisterFile/decoder5x32_TEST_isim_beh.exe
-Fuse Memory Usage: 33312 KB
-Fuse CPU Usage: 468 ms
+Waiting for 3 sub-compilation(s) to finish...
+Compiled 17 VHDL Units
+Built simulation executable D:/TUC_PROJECT/TUC_Computer_Architecture/Lab1/lab1_RegisterFile/register_file_TEST_isim_beh.exe
+Fuse Memory Usage: 37104 KB
+Fuse CPU Usage: 686 ms

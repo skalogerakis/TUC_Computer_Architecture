@@ -1,0 +1,29 @@
+Command line:
+   T_ROTL_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  64348
+
+Wed Feb 27 01:23:57 2019
+
+
+ Elaboration Time: 0.046875 sec
+
+ Current Memory Usage: 5331.39 Meg
+
+ Total Signals          : 4
+ Total Nets             : 64
+ Total Signal Drivers   : 2
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 2
+ Total Traceable Variables  : 8
+ Total Scalar Nets and Variables : 424
+Total Line Count : 6
+
+ Total Simulation Time: 0.046875 sec
+
+ Current Memory Usage: 5331.39 Meg
+
+Wed Feb 27 01:24:01 2019
+

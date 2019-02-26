@@ -31,7 +31,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity ROTR is
     Port ( ROTRA : in  STD_LOGIC_VECTOR (31 downto 0);
-           ROTROUT : out  STD_LOGIC_VECTOR (31 downto 0));
+           ROTROUT : out  STD_LOGIC_VECTOR (31 downto 0):= (OTHERS => '0'));
 end ROTR;
 
 architecture Behavioral of ROTR is

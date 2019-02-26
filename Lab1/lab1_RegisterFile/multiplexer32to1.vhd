@@ -9,7 +9,7 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 --use UNISIM.VComponents.all;
 
 entity multiplexer32to1 is
-    Port ( x : in std_logic_vector(31 downto 0);
+    Port ( x : in std_logic_vector(31 downto 0) := (others => '0');
            s : in std_logic_vector(4 downto 0);
            y : out std_logic);
 end multiplexer32to1;

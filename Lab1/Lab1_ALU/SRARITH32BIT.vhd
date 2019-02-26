@@ -31,7 +31,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity SRARITH32BIT is
     Port ( SRARITHA : in  STD_LOGIC_VECTOR (31 downto 0);
-           SRARITHOUT : out  STD_LOGIC_VECTOR (31 downto 0));
+           SRARITHOUT : out  STD_LOGIC_VECTOR (31 downto 0):= (OTHERS => '0'));
 end SRARITH32BIT;
 
 architecture Behavioral of SRARITH32BIT is

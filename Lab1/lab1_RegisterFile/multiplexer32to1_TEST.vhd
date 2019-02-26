@@ -41,7 +41,7 @@ ARCHITECTURE behavior OF multiplexer32to1_TEST IS
  
     COMPONENT multiplexer32to1
     PORT(
-         x : IN  std_logic_vector(31 downto 0);
+         x : IN  std_logic_vector(31 downto 0) ;
          s : IN  std_logic_vector(4 downto 0);
          y : OUT  std_logic
         );

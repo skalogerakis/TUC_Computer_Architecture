@@ -31,7 +31,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity ROTL is
     Port ( ROTLA : in  STD_LOGIC_VECTOR (31 downto 0);
-           ROTLOUT : out  STD_LOGIC_VECTOR (31 downto 0));
+           ROTLOUT : out  STD_LOGIC_VECTOR (31 downto 0):= (OTHERS => '0'));
 end ROTL;
 
 architecture Behavioral of ROTL is

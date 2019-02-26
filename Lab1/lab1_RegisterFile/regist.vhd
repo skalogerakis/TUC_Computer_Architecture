@@ -35,7 +35,7 @@ ENTITY regist IS
 PORT ( 	
 			DataIn : IN STD_LOGIC_VECTOR(31 DOWNTO 0) ;
 			WE, Clock : IN STD_LOGIC ;
-			DataOut : OUT STD_LOGIC_VECTOR(31 DOWNTO 0) ) ;
+			DataOut : OUT STD_LOGIC_VECTOR(31 DOWNTO 0) := (others => '0') ) ;
 			
 END regist ;
 

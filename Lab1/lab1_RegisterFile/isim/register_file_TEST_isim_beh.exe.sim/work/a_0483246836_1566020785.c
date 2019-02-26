@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/Users/user/Desktop/lab1B/lab1_B/decoder2x4.vhd";
+static const char *ng0 = "D:/TUC_PROJECT/TUC_Computer_Architecture/Lab1/lab1_RegisterFile/decoder2x4.vhd";
 
 
 
@@ -49,29 +49,29 @@ static void work_a_0483246836_1566020785_p_0(char *t0)
 LAB0:    xsi_set_current_line(37, ng0);
     t1 = (t0 + 1032U);
     t2 = *((char **)t1);
-    t1 = (t0 + 4318);
+    t1 = (t0 + 4466);
     t4 = xsi_mem_cmp(t1, t2, 2U);
     if (t4 == 1)
         goto LAB3;
 
-LAB8:    t5 = (t0 + 4320);
+LAB8:    t5 = (t0 + 4468);
     t7 = xsi_mem_cmp(t5, t2, 2U);
     if (t7 == 1)
         goto LAB4;
 
-LAB9:    t8 = (t0 + 4322);
+LAB9:    t8 = (t0 + 4470);
     t10 = xsi_mem_cmp(t8, t2, 2U);
     if (t10 == 1)
         goto LAB5;
 
-LAB10:    t11 = (t0 + 4324);
+LAB10:    t11 = (t0 + 4472);
     t13 = xsi_mem_cmp(t11, t2, 2U);
     if (t13 == 1)
         goto LAB6;
 
 LAB11:
 LAB7:    xsi_set_current_line(42, ng0);
-    t1 = (t0 + 4342);
+    t1 = (t0 + 4490);
     t3 = (t0 + 2752);
     t5 = (t3 + 56U);
     t6 = *((char **)t5);
@@ -85,7 +85,7 @@ LAB2:    t1 = (t0 + 2672);
 
 LAB1:    return;
 LAB3:    xsi_set_current_line(38, ng0);
-    t14 = (t0 + 4326);
+    t14 = (t0 + 4474);
     t16 = (t0 + 2752);
     t17 = (t16 + 56U);
     t18 = *((char **)t17);
@@ -96,7 +96,7 @@ LAB3:    xsi_set_current_line(38, ng0);
     goto LAB2;
 
 LAB4:    xsi_set_current_line(39, ng0);
-    t1 = (t0 + 4330);
+    t1 = (t0 + 4478);
     t3 = (t0 + 2752);
     t5 = (t3 + 56U);
     t6 = *((char **)t5);
@@ -107,7 +107,7 @@ LAB4:    xsi_set_current_line(39, ng0);
     goto LAB2;
 
 LAB5:    xsi_set_current_line(40, ng0);
-    t1 = (t0 + 4334);
+    t1 = (t0 + 4482);
     t3 = (t0 + 2752);
     t5 = (t3 + 56U);
     t6 = *((char **)t5);
@@ -118,7 +118,7 @@ LAB5:    xsi_set_current_line(40, ng0);
     goto LAB2;
 
 LAB6:    xsi_set_current_line(41, ng0);
-    t1 = (t0 + 4338);
+    t1 = (t0 + 4486);
     t3 = (t0 + 2752);
     t5 = (t3 + 56U);
     t6 = *((char **)t5);

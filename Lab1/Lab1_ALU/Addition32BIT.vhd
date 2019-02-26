@@ -36,8 +36,8 @@ use IEEE.NUMERIC_STD.all;
 entity Addition32BIT is
     Port ( ADDA : in  STD_LOGIC_VECTOR (31 downto 0);
            ADDB : in  STD_LOGIC_VECTOR (31 downto 0);
-           ADDOUT : out  STD_LOGIC_VECTOR (31 downto 0);
-           ADDCOUT : out  STD_LOGIC;
+           ADDOUT : out  STD_LOGIC_VECTOR (31 downto 0) := (OTHERS => '0');
+           ADDCOUT : out  STD_LOGIC := '0';
            ADDOVF : out  STD_LOGIC := '0');
 end Addition32BIT;
 

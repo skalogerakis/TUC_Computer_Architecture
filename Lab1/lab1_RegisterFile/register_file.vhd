@@ -86,7 +86,7 @@ BEGIN
 
 	for k in 0 to 31 generate 									  
 											
-	WrEnTOreg(k) <= decTOandWrEn(k) and WrEn ;	
+	WrEnTOreg(k) <= decTOandWrEn(k) and WrEn after 2 ns ;	
 		
 	end generate WrEn_GEN;
 	

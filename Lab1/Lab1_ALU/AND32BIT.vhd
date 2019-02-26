@@ -32,7 +32,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 entity AND32BIT is
     Port ( ANDA : in  STD_LOGIC_VECTOR (31 downto 0);
            ANDB : in  STD_LOGIC_VECTOR (31 downto 0);
-           OUTA : out  STD_LOGIC_VECTOR (31 downto 0));
+           OUTA : out  STD_LOGIC_VECTOR (31 downto 0):= (OTHERS => '0'));
 end AND32BIT;
 
 architecture Behavioral of AND32BIT is

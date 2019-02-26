@@ -32,7 +32,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 entity OR32BIT is
     Port ( ORA : in  STD_LOGIC_VECTOR (31 downto 0);
            ORB : in  STD_LOGIC_VECTOR (31 downto 0);
-           OROUT : out  STD_LOGIC_VECTOR (31 downto 0));
+           OROUT : out  STD_LOGIC_VECTOR (31 downto 0):= (OTHERS => '0'));
 end OR32BIT;
 
 architecture Behavioral of OR32BIT is

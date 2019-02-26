@@ -8,25 +8,7 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/TUC_PROJECT/TUC_Computer_Architecture/Lab1/lab1_RegisterFile/decoder2x4.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/TUC_PROJECT/TUC_Computer_Architecture/Lab1/lab1_RegisterFile/decoder3x8.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/TUC_PROJECT/TUC_Computer_Architecture/Lab1/lab1_RegisterFile/decoder5x8.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/TUC_PROJECT/TUC_Computer_Architecture/Lab1/lab1_RegisterFile/multiplexer1024to32.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/TUC_PROJECT/TUC_Computer_Architecture/Lab1/lab1_RegisterFile/multiplexer32to1.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/TUC_PROJECT/TUC_Computer_Architecture/Lab1/lab1_RegisterFile/regist.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/TUC_PROJECT/TUC_Computer_Architecture/Lab1/lab1_RegisterFile/register_file.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/TUC_PROJECT/TUC_Computer_Architecture/Lab1/lab1_RegisterFile/register_file_TEST.vhd&quot; into library work</arg>
 </msg>
 
 </messages>
