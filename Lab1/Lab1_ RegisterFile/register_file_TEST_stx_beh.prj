@@ -1,0 +1,5 @@
+vhdl isim_temp "regist.vhd"
+vhdl isim_temp "multiplexer32to1.vhd"
+vhdl isim_temp "decoder5x8.vhd"
+vhdl isim_temp "register_file.vhd"
+vhdl isim_temp "register_file_TEST.vhd"

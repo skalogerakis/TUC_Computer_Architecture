@@ -1,6 +1,0 @@
-vhdtdtfi -lib work multiplexer32to1.vhd -lib work multiplexer1024to32.vhd -prj lab1_B -o multiplexer1024to32.spl -module multiplexer1024to32 -template C:/Xilinx/13.4/ISE_DS/ISE//data/splfile.tft -deleteonerror 
-spl2sym -intstyle ise -family spartan6 multiplexer1024to32.spl C:/Xilinx/lab1_B/multiplexer1024to32.sym 
-vhdtdtfi -prj lab1_B -o C:/Xilinx/lab1_B/multiplexer1024to32.tfi -module multiplexer1024to32 -template C:/Xilinx/13.4/ISE_DS/ISE//data/tfi.tft -deleteonerror -lib work multiplexer32to1.vhd -lib work multiplexer1024to32.vhd 
-xst -intstyle ise -ifn "C:/Users/user/Desktop/lab1B/lab1_B/multiplexer1024to32.xst" -ofn "C:/Users/user/Desktop/lab1B/lab1_B/multiplexer1024to32.syr" 
-ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -bm decoder2x4_TEST.bmm -p xc6slx4-tqg144-3 multiplexer1024to32.ngc multiplexer1024to32.ngd  
-map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o multiplexer1024to32_map.ncd multiplexer1024to32.ngd multiplexer1024to32.pcf 

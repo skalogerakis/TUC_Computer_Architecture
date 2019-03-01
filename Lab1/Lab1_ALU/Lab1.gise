@@ -58,11 +58,11 @@
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="SRLOGIC_stx_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Subtraction32BIT_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Subtraction32BIT_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="T_ALU_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="T_ALU_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="T_ALU_isim_beh.wdb"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="T_ALU_stx_beh.prj"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="T_AND32BIT_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="T_AND32BIT_isim_beh.exe"/>
-    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="T_AND32BIT_isim_beh.wdb"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="T_AND32BIT_stx_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="T_Addition32BIT_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="T_Addition32BIT_stx_beh.prj"/>
@@ -121,11 +121,11 @@
       <outfile xil_pn:name="T_SRLOGIC.vhd"/>
       <outfile xil_pn:name="T_Substraction32BIT.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1551223482" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-2855301351255949472" xil_pn:start_ts="1551223482">
+    <transform xil_pn:end_ts="1551405069" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-7525640527649570901" xil_pn:start_ts="1551405069">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1551223482" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="4507976243782452578" xil_pn:start_ts="1551223482">
+    <transform xil_pn:end_ts="1551405069" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-6947798129476289939" xil_pn:start_ts="1551405069">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
@@ -157,27 +157,20 @@
       <outfile xil_pn:name="T_SRLOGIC.vhd"/>
       <outfile xil_pn:name="T_Substraction32BIT.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1551223485" xil_pn:in_ck="3516401651764069315" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="1240756203440213922" xil_pn:start_ts="1551223482">
+    <transform xil_pn:end_ts="1551405073" xil_pn:in_ck="3516401651764069315" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="1607098598464348024" xil_pn:start_ts="1551405069">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForProperties"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="T_AND32BIT_beh.prj"/>
-      <outfile xil_pn:name="T_AND32BIT_isim_beh.exe"/>
+      <outfile xil_pn:name="T_ALU_beh.prj"/>
+      <outfile xil_pn:name="T_ALU_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1551223485" xil_pn:in_ck="-9110264595787708925" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-1460062607701831825" xil_pn:start_ts="1551223485">
+    <transform xil_pn:end_ts="1551405073" xil_pn:in_ck="-9110264595787708925" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-3693185006735137531" xil_pn:start_ts="1551405073">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForProperties"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="T_AND32BIT_isim_beh.wdb"/>
+      <outfile xil_pn:name="T_ALU_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
     </transform>

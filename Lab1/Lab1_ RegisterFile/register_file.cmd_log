@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "C:/Users/EKALANTAJEI/Dropbox/sxolh/organosi/LAB1/lab1_B/register_file.xst" -ofn "C:/Users/EKALANTAJEI/Dropbox/sxolh/organosi/LAB1/lab1_B/register_file.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-3 register_file.ngc register_file.ngd  

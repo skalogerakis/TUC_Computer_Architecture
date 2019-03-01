@@ -1,0 +1,3 @@
+vhdl work "regist.vhd"
+vhdl work "multiplexer32to1.vhd"
+vhdl work "register_file.vhd"
