@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "D:/TUC_PROJECT/TUC_Computer_Architecture/Lab2/Lab2/T_ALUSTAGE_isim_beh.exe" -prj "D:/TUC_PROJECT/TUC_Computer_Architecture/Lab2/Lab2/T_ALUSTAGE_beh.prj" "work.T_ALUSTAGE" 

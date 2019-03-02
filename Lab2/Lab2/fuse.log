@@ -1,0 +1,44 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o D:/TUC_PROJECT/TUC_Computer_Architecture/Lab2/Lab2/T_ALUSTAGE_isim_beh.exe -prj D:/TUC_PROJECT/TUC_Computer_Architecture/Lab2/Lab2/T_ALUSTAGE_beh.prj work.T_ALUSTAGE 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "D:/TUC_PROJECT/TUC_Computer_Architecture/Lab2/Lab2/../../Lab1/Lab1_ALU/Subtraction32BIT.vhd" into library work
+Parsing VHDL file "D:/TUC_PROJECT/TUC_Computer_Architecture/Lab2/Lab2/../../Lab1/Lab1_ALU/SRLOGIC.vhd" into library work
+Parsing VHDL file "D:/TUC_PROJECT/TUC_Computer_Architecture/Lab2/Lab2/../../Lab1/Lab1_ALU/SRARITH32BIT.vhd" into library work
+Parsing VHDL file "D:/TUC_PROJECT/TUC_Computer_Architecture/Lab2/Lab2/../../Lab1/Lab1_ALU/SLLOGIC.vhd" into library work
+Parsing VHDL file "D:/TUC_PROJECT/TUC_Computer_Architecture/Lab2/Lab2/../../Lab1/Lab1_ALU/ROTR.vhd" into library work
+Parsing VHDL file "D:/TUC_PROJECT/TUC_Computer_Architecture/Lab2/Lab2/../../Lab1/Lab1_ALU/ROTL.vhd" into library work
+Parsing VHDL file "D:/TUC_PROJECT/TUC_Computer_Architecture/Lab2/Lab2/../../Lab1/Lab1_ALU/OR32BIT.vhd" into library work
+Parsing VHDL file "D:/TUC_PROJECT/TUC_Computer_Architecture/Lab2/Lab2/../../Lab1/Lab1_ALU/AND32BIT.vhd" into library work
+Parsing VHDL file "D:/TUC_PROJECT/TUC_Computer_Architecture/Lab2/Lab2/../../Lab1/Lab1_ALU/Addition32BIT.vhd" into library work
+Parsing VHDL file "D:/TUC_PROJECT/TUC_Computer_Architecture/Lab2/Lab2/MUX2TO1.vhd" into library work
+Parsing VHDL file "D:/TUC_PROJECT/TUC_Computer_Architecture/Lab2/Lab2/../../Lab1/Lab1_ALU/ALU.vhd" into library work
+Parsing VHDL file "D:/TUC_PROJECT/TUC_Computer_Architecture/Lab2/Lab2/ALUSTAGE.vhd" into library work
+Parsing VHDL file "D:/TUC_PROJECT/TUC_Computer_Architecture/Lab2/Lab2/T_ALUSTAGE.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling architecture behavioral of entity MUX2TO1 [mux2to1_default]
+Compiling package std_logic_arith
+Compiling package std_logic_signed
+Compiling package numeric_std
+Compiling architecture behavioral of entity Addition32BIT [addition32bit_default]
+Compiling architecture behavioral of entity Subtraction32BIT [subtraction32bit_default]
+Compiling architecture behavioral of entity AND32BIT [and32bit_default]
+Compiling architecture behavioral of entity OR32BIT [or32bit_default]
+Compiling architecture behavioral of entity SRARITH32BIT [srarith32bit_default]
+Compiling architecture behavioral of entity SRLOGIC [srlogic_default]
+Compiling architecture behavioral of entity SLLOGIC [sllogic_default]
+Compiling architecture behavioral of entity ROTL [rotl_default]
+Compiling architecture behavioral of entity ROTR [rotr_default]
+Compiling architecture behavioral of entity ALU [alu_default]
+Compiling architecture behavioral of entity ALUSTAGE [alustage_default]
+Compiling architecture behavior of entity t_alustage
+Time Resolution for simulation is 1ps.
+Waiting for 9 sub-compilation(s) to finish...
+Compiled 30 VHDL Units
+Built simulation executable D:/TUC_PROJECT/TUC_Computer_Architecture/Lab2/Lab2/T_ALUSTAGE_isim_beh.exe
+Fuse Memory Usage: 38112 KB
+Fuse CPU Usage: 593 ms

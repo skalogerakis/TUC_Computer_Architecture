@@ -39,7 +39,7 @@ entity ALU is
            ALUOVF : out  STD_LOGIC);
 end ALU;
 
-architecture Behavioral of ALU is
+	architecture Behavioral of ALU is
 
 COMPONENT Addition32BIT
     PORT(
@@ -149,7 +149,7 @@ CONSTANT ZEROOUTPUT : std_logic_vector (31 downto 0) := (others => '0');	--SWITC
 
 
 signal NOTEXIT : std_logic_vector (31 downto 0);
-
+signal NANDEXIT : std_logic_vector (31 downto 0);
 begin
 
 ADD : Addition32BIT PORT MAP(
@@ -206,12 +206,14 @@ RTR: ROTR PORT MAP(
         );
 		  
 NOTEXIT <= NOT ALUA AFTER 10 NS ;
+NANDEXIT <= ALUA NAND ALUB AFTER 10 NS;
   
 WITH ALUOP SELECT
 	OUTPUT <= ADDEXIT WHEN "0000",
 					SUBEXIT WHEN "0001",
 					ANDEXIT WHEN "0010",
-					OREXIT WHEN "0011",
+					OREXIT WHEN "0111",
+					NANDEXIT WHEN "0110",
 					NOTEXIT WHEN "0100",
 					SRAREXIT WHEN "1000",
 					SRLOEXIT WHEN "1001",
