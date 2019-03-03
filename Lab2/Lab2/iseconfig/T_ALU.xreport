@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2019-03-03T01:21:44</DateModified>
+  <DateModified>2019-03-03T12:03:49</DateModified>
   <ModuleName>T_ALU</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>D:/TUC_PROJECT/TUC_Computer_Architecture/Lab2/Lab2/iseconfig/T_ALU.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>D:/TUC_PROJECT/TUC_Computer_Architecture/Lab2/Lab2</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>D:/TUC_PROJECT/TUC_Computer_Architecture/Lab2/Lab2\</ImplementationReportsDirectory>
   <DateInitialized>2019-03-03T01:21:44</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
