@@ -71,7 +71,7 @@ RRAM : RAM PORT MAP(
 			  );
 			  
 --0x400 that is demanded is number 1024 in binary and 10000000000	in decimal. So we add our address to that
-finAddr <= ALU_MEM_Addr(12 DOWNTO 2) + 1024;
+finAddr <= ALU_MEM_Addr(12 DOWNTO 2) + "10000000000";
 
 
 end Behavioral;

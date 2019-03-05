@@ -86,78 +86,56 @@ BEGIN
    -- Stimulus process
    stim_proc: process
    begin		
-      Mem_WrEn <= '0' ;
-      wait for Clk_period*10;
+      
+		--First write some stuff without enable
+      wait for Clk_period *5;
 		
-		ALU_MEM_Addr <= "00000000000000000000000000000001" ;
-		MEM_DataIn   <= "00000000000000000000000000000001" ;
-		wait for Clk_period;
-      Mem_WrEn <= '1' ;
-      wait for Clk_period*5;
+		ALU_MEM_Addr <= "00000000000000000000000000001000" ;
+		MEM_DataIn   <= "00000000000000000000000000000100" ;
 		Mem_WrEn <= '0' ;
-      wait for Clk_period*5;
 		
-		ALU_MEM_Addr <= "00000000000000000000000000000010" ;
-		MEM_DataIn   <= "00000000000000000000000000000010" ;
-		wait for Clk_period;
-      Mem_WrEn <= '1' ;
-      wait for Clk_period*5;
+		wait for Clk_period *5;
+		
+		ALU_MEM_Addr <= "00000000000000000000000000001000" ;
+		MEM_DataIn   <= "00000000000000000001101000000100" ;
 		Mem_WrEn <= '0' ;
-      wait for Clk_period*5;
 		
-		ALU_MEM_Addr <= "00000000000000000000000000000011" ;
-		MEM_DataIn   <= "00000000000000000000000000000011" ;
-		wait for Clk_period;
-      Mem_WrEn <= '1' ;
-      wait for Clk_period*5;
+      wait for Clk_period *5;
+		
+		ALU_MEM_Addr <= "00000000000000000000000000001100" ;
+		MEM_DataIn   <= "00000000000000000000000000100100" ;
+		Mem_WrEn <= '1' ;
+		
+		wait for Clk_period *5;
+		
+		ALU_MEM_Addr <= "00000000000000000000000000011100" ;
+		MEM_DataIn   <= "00000000000000000000000000101100" ;
+		Mem_WrEn <= '1' ;
+		
+		
+		wait for Clk_period *5;
+		
+		ALU_MEM_Addr <= "00000000000000000000000001111100" ;
+		MEM_DataIn   <= "00000000000000000000000000110100" ;
+		Mem_WrEn <= '1' ;
+		
+		wait for Clk_period *5;
+		ALU_MEM_Addr <= "00000000000000000000000000001100" ;
 		Mem_WrEn <= '0' ;
-      wait for Clk_period*5;
 		
-		ALU_MEM_Addr <= "00000000000000000000000000100000" ;
-		MEM_DataIn   <= "00000000000000000000000000100000" ;
-		wait for Clk_period;
-      Mem_WrEn <= '1' ;
-      wait for Clk_period*5;
+		wait for Clk_period *5;
+		ALU_MEM_Addr <= "00000000000000000000000000011100" ;
 		Mem_WrEn <= '0' ;
-      wait for Clk_period*10;
 		
-		---------------------------------------------------------------------------------------------------
+		wait for Clk_period *5;
+		ALU_MEM_Addr <= "00000000000000000000000001111100" ;
+		Mem_WrEn <= '0' ;
 		
-		ALU_MEM_Addr <= "00000000000000000000000000000001" ;
-
-      wait for Clk_period*5;
+		wait for Clk_period *5;	--zero expected
+		ALU_MEM_Addr <= "00000000000000000000100001111100" ;
+		Mem_WrEn <= '0' ;
 		
-		ALU_MEM_Addr <= "00000000000000000000000000000010" ;
-
-      wait for Clk_period*5;
-
-		ALU_MEM_Addr <= "00000000000000000000000000000011" ;
-
-      wait for Clk_period*5;
 		
-		ALU_MEM_Addr <= "00000000000000000000000000100000" ;
-
-      wait for Clk_period*15;
-		
-		--------------------------------------------------------------------------------------------------- 0's are expected from now on
-		
-		ALU_MEM_Addr <= "00000000000000000000000000000000" ;
-
-      wait for Clk_period*5;
-		
-		ALU_MEM_Addr <= "00000000000000000000000000000100" ;
-
-      wait for Clk_period*5;
-
-		ALU_MEM_Addr <= "00000000000000000000000000011111" ;
-
-      wait for Clk_period*5;
-		
-		ALU_MEM_Addr <= "00000000000000000000000000100001" ;
-
-      wait for Clk_period*5;
-		
-		---------------------------------------------------------------------------------------------------
 		
 
       wait;

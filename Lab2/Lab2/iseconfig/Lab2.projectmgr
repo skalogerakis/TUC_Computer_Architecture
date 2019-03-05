@@ -77,19 +77,18 @@
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
          <ClosedNode>/ALUSTAGE - Behavioral D:|TUC_PROJECT|TUC_Computer_Architecture|Lab2|Lab2|ALUSTAGE.vhd</ClosedNode>
-         <ClosedNode>/IFSTAGE - Behavioral D:|TUC_PROJECT|TUC_Computer_Architecture|Lab2|Lab2|IFSTAGE.vhd</ClosedNode>
          <ClosedNode>/T_ALU - behavior D:|TUC_PROJECT|TUC_Computer_Architecture|Lab1|Lab1_ALU|T_ALU.vhd</ClosedNode>
          <ClosedNode>/T_ALUSTAGE - behavior D:|TUC_PROJECT|TUC_Computer_Architecture|Lab2|Lab2|T_ALUSTAGE.vhd</ClosedNode>
          <ClosedNode>/T_MUX2TO1 - behavior D:|TUC_PROJECT|TUC_Computer_Architecture|Lab2|Lab2|T_MUX2TO1.vhd</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>uut - MEMSTAGE - Behavioral (D:/TUC_PROJECT/TUC_Computer_Architecture/Lab2/Lab2/MEMSTAGE.vhd)</SelectedItem>
+         <SelectedItem>TEST_MEMSTAGE - behavior (D:/TUC_PROJECT/TUC_Computer_Architecture/Lab2/Lab2/TEST_MEMSTAGE.vhd)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000015b000000020000000000000000000000000200000064ffffffff0000008100000003000000020000015b0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>uut - MEMSTAGE - Behavioral (D:/TUC_PROJECT/TUC_Computer_Architecture/Lab2/Lab2/MEMSTAGE.vhd)</CurrentItem>
+      <CurrentItem>TEST_MEMSTAGE - behavior (D:/TUC_PROJECT/TUC_Computer_Architecture/Lab2/Lab2/TEST_MEMSTAGE.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -97,25 +96,25 @@
          <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem/>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001af000000010000000100000000000000000000000064ffffffff000000810000000000000001000001af0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem/>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem>Simulate Behavioral Model</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001af000000010000000100000000000000000000000064ffffffff000000810000000000000001000001af0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem>Simulate Behavioral Model</CurrentItem>
    </ItemView>
 </Project>

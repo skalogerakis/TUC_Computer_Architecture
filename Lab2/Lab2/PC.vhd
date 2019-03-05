@@ -30,8 +30,8 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity PC is
-    Port ( DataIn : in  STD_LOGIC_VECTOR (9 downto 0);
-           DataOut : out  STD_LOGIC_VECTOR (9 downto 0);
+    Port ( DataIn : in  STD_LOGIC_VECTOR (31 downto 0);
+           DataOut : out  STD_LOGIC_VECTOR (31 downto 0);
            clk : in  STD_LOGIC;
            wenalbe : in  STD_LOGIC;
            reset : in  STD_LOGIC);
@@ -47,7 +47,7 @@ begin
 		BEGIN
 		
 		WAIT UNTIL clk'EVENT AND clk = '1' ;
-		IF reset = '1' then tOut <="0000000000";
+		IF reset = '1' then tOut <="00000000000000000000000000000000";
 		END IF;
 		IF wenalbe='1' THEN tOut <= DataIn;
 		END IF ;

@@ -2,14 +2,14 @@ Command line:
    MEMSTAGE_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  52004
+     -socket  53687
 
-Tue Mar 05 01:27:51 2019
+Tue Mar 05 19:34:30 2019
 
 
- Elaboration Time: 0.171875 sec
+ Elaboration Time: 0.125 sec
 
- Current Memory Usage: 5378.36 Meg
+ Current Memory Usage: 5377.81 Meg
 
  Total Signals          : 16
  Total Nets             : 65688
@@ -21,9 +21,9 @@ Tue Mar 05 01:27:51 2019
  Total Scalar Nets and Variables : 66587
 Total Line Count : 6
 
- Total Simulation Time: 0.21875 sec
+ Total Simulation Time: 0.15625 sec
 
- Current Memory Usage: 5378.36 Meg
+ Current Memory Usage: 5377.81 Meg
 
-Tue Mar 05 01:27:55 2019
+Tue Mar 05 19:34:33 2019
 
