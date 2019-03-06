@@ -43,8 +43,8 @@ end IFSTAGE;
 architecture Behavioral of IFSTAGE is
 
 COMPONENT PC is
-    Port ( DataIn : in  STD_LOGIC_VECTOR (9 downto 0);
-           DataOut : out  STD_LOGIC_VECTOR (9 downto 0);
+    Port ( DataIn : in  STD_LOGIC_VECTOR (31 downto 0);
+           DataOut : out  STD_LOGIC_VECTOR (31 downto 0);
            clk : in  STD_LOGIC;
            wenalbe : in  STD_LOGIC;
            reset : in  STD_LOGIC
@@ -75,7 +75,7 @@ SIGNAL MUXIN1 : STD_LOGIC_VECTOR(31 DOWNTO 0);
 SIGNAL MUXIN2 : STD_LOGIC_VECTOR(31 DOWNTO 0);
 SIGNAL MUXOUT : STD_LOGIC_VECTOR(31 DOWNTO 0);
 SIGNAL ADDROUT :  STD_LOGIC_VECTOR (10 downto 0);
---SIGNAL PCOUT : STD_LOGIC_VECTOR(9 DOWNTO 0);
+SIGNAL PCOUT : STD_LOGIC_VECTOR(31 DOWNTO 0);
 
 SIGNAL dummyDout : STD_LOGIC_VECTOR(31 DOWNTO 0) := (OTHERS => '0');
 SIGNAL dummyWe : STD_LOGIC := '0';
@@ -88,14 +88,14 @@ begin
 
 MUX : MUX2TO1 PORT MAP(
 			InA => MUXIN1,
-         InB =>MUXIN2,
+         InB => MUXIN2,
          Selector => PC_SEL,
          Output => MUXOUT
 			);
 
 PROGCOUNTER : PC PORT MAP(
 				DataIn => MUXOUT,
-				DataOut => PC1,
+				DataOut => PCOUT,
 				clk => CLK,
 				wenalbe => PC_LDEN,
 				reset => RESET
@@ -112,9 +112,9 @@ RAMCOM : RAM PORT MAP (
 			 );
 	
 
-
-MUXIN1 <= PC1 + 4;
-MUXIN2 <= MUXIN1 + PC_IMMED;
-ADDROUT <= PC1(12 DOWNTO 2);
+PC1<=PCOUT;
+MUXIN1 <= PCOUT + 4;
+MUXIN2 <= PCOUT + 4 + PC_IMMED;
+ADDROUT <= PCOUT(12 DOWNTO 2);
 end Behavioral;
 

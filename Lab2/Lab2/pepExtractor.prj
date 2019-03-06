@@ -1,2 +1,4 @@
-work	"MEMSTAGE.vhd"
+work	"IFSTAGE.vhd"
+work	"MUX2TO1.vhd"
+work	"PC.vhd"
 work	"RAM.vhd"

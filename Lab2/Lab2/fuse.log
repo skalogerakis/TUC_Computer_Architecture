@@ -1,11 +1,13 @@
-Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o D:/TUC_PROJECT/TUC_Computer_Architecture/Lab2/Lab2/TEST_MEMSTAGE_isim_beh.exe -prj D:/TUC_PROJECT/TUC_Computer_Architecture/Lab2/Lab2/TEST_MEMSTAGE_beh.prj work.TEST_MEMSTAGE 
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -o "D:/TUC_PROJECT/TUC_Computer_Architecture/Lab2/Lab2/T_IFSTAGE_isim_beh.exe" -prj "D:/TUC_PROJECT/TUC_Computer_Architecture/Lab2/Lab2/T_IFSTAGE_beh.prj" "work.T_IFSTAGE" 
 ISim P.20131013 (signature 0x7708f090)
 Number of CPUs detected in this system: 4
 Turning on mult-threading, number of parallel sub-compilation jobs: 8 
 Determining compilation order of HDL files
 Parsing VHDL file "D:/TUC_PROJECT/TUC_Computer_Architecture/Lab2/Lab2/RAM.vhd" into library work
-Parsing VHDL file "D:/TUC_PROJECT/TUC_Computer_Architecture/Lab2/Lab2/MEMSTAGE.vhd" into library work
-Parsing VHDL file "D:/TUC_PROJECT/TUC_Computer_Architecture/Lab2/Lab2/TEST_MEMSTAGE.vhd" into library work
+Parsing VHDL file "D:/TUC_PROJECT/TUC_Computer_Architecture/Lab2/Lab2/PC.vhd" into library work
+Parsing VHDL file "D:/TUC_PROJECT/TUC_Computer_Architecture/Lab2/Lab2/MUX2TO1.vhd" into library work
+Parsing VHDL file "D:/TUC_PROJECT/TUC_Computer_Architecture/Lab2/Lab2/IFSTAGE.vhd" into library work
+Parsing VHDL file "D:/TUC_PROJECT/TUC_Computer_Architecture/Lab2/Lab2/T_IFSTAGE.vhd" into library work
 Starting static elaboration
 Completed static elaboration
 Compiling package standard
@@ -15,12 +17,14 @@ Compiling package std_logic_signed
 Compiling package std_logic_unsigned
 Compiling package textio
 Compiling package std_logic_textio
+Compiling architecture behavioral of entity MUX2TO1 [mux2to1_default]
+Compiling architecture behavioral of entity PC [pc_default]
 Compiling architecture syn of entity RAM [ram_default]
-Compiling architecture behavioral of entity MEMSTAGE [memstage_default]
-Compiling architecture behavior of entity test_memstage
+Compiling architecture behavioral of entity IFSTAGE [ifstage_default]
+Compiling architecture behavior of entity t_ifstage
 Time Resolution for simulation is 1ps.
-Waiting for 2 sub-compilation(s) to finish...
-Compiled 12 VHDL Units
-Built simulation executable D:/TUC_PROJECT/TUC_Computer_Architecture/Lab2/Lab2/TEST_MEMSTAGE_isim_beh.exe
-Fuse Memory Usage: 42564 KB
-Fuse CPU Usage: 531 ms
+Waiting for 4 sub-compilation(s) to finish...
+Compiled 16 VHDL Units
+Built simulation executable D:/TUC_PROJECT/TUC_Computer_Architecture/Lab2/Lab2/T_IFSTAGE_isim_beh.exe
+Fuse Memory Usage: 42684 KB
+Fuse CPU Usage: 468 ms

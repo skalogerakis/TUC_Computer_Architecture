@@ -39,7 +39,7 @@ end PC;
 
 architecture Behavioral of PC is
 
-SIGNAL tOut: std_logic_vector(9 downto 0) ;
+SIGNAL tOut: std_logic_vector(31 downto 0) ;
 
 begin
 
