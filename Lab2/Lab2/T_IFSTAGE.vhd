@@ -75,7 +75,7 @@ BEGIN
           CLK => CLK,
           PC1 => PC1
         );
-
+		  
    -- Clock process definitions
    CLK_process :process
    begin
@@ -88,43 +88,38 @@ BEGIN
 
    -- Stimulus process
    stim_proc: process
-   begin		
+   begin
+
+      RESET <='1';
+		wait for Clk_period*2;
+		
+		RESET <='0';
+		PC_IMMED <= "00000000000000000000000000000100";
+      PC_SEL <= '0';
+      PC_LDEN <= '1';
+		wait for Clk_period*2;
+		
+		RESET <='0';
+		PC_IMMED <= "00000000000000000000000000100100";
+      PC_SEL <= '0';
+      PC_LDEN <= '0';
+		wait for Clk_period*2;
       
-			Reset <= '1' ;                   -- RST
-      wait for 100 ns;	
-		Reset <= '0' ;                   -- Expected "00000000000000000000000000000001" (1)
-      wait for Clk_period*2;
-		
-		PC_sel <= '0' ;
-		PC_LdEn <= '1' ;                 -- Next Line
-		
-		wait for Clk_period*1;
-		PC_LdEn <= '0' ;                 -- Expected "00000000000000000000000000000010" (2) 
+		RESET <='0';
+		PC_IMMED <= "00000000000000000000000000001100";
+      PC_SEL <= '1';
+      PC_LDEN <= '1';
 		wait for Clk_period*2;
 		
-		PC_Immed <= "00000000000000000000000001000000" ; -- 64  (16 * 4)
-		PC_sel <= '1' ;
-		PC_LdEn <= '1' ;                 -- Skip 16 lines of Machine Code
-		
-		wait for Clk_period*1;
-		PC_LdEn <= '0' ;                 -- Expected "00000000000000000000000000010011" (19)
+		RESET <='1';
 		wait for Clk_period*2;
 		
-		PC_sel <= '0' ;
-		PC_LdEn <= '1' ;                 -- Next Line
+		RESET <='0';
+		PC_IMMED <= "00000000000000000110000000001100";
+      PC_SEL <= '1';
+      PC_LDEN <= '0';
 		
-		wait for Clk_period*1;
-		PC_LdEn <= '0' ;                 -- Expected "00000000000000000000000000000010" (20)
-		wait for Clk_period*2;
-		
-		PC_Immed <= "11111111111111111111111111100000" ; -- -32 (-8 * 4)
-		PC_sel <= '1' ;
-		PC_LdEn <= '1' ;                 -- Skip 16 lines of Machine Code
-		
-		wait for Clk_period*1;
-		PC_LdEn <= '0' ;                 -- Expected "00000000000000000000000000000010" (13)
-		wait for Clk_period*10;
-		Reset <= '1' ;                   -- RST
+			
 		
 		wait ;
 	end process;

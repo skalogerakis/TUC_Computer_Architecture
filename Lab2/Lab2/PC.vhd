@@ -39,7 +39,7 @@ end PC;
 
 architecture Behavioral of PC is
 
-SIGNAL tOut: std_logic_vector(31 downto 0) ;
+SIGNAL tOut: std_logic_vector(31 downto 0) := (OTHERS => '0');
 
 begin
 
@@ -47,10 +47,11 @@ begin
 		BEGIN
 		
 		WAIT UNTIL clk'EVENT AND clk = '1' ;
-		IF reset = '1' then tOut <="00000000000000000000000000000000";
-		END IF;
+		
 		IF wenalbe='1' THEN tOut <= DataIn;
 		END IF ;
+		IF reset = '1' then tOut <="00000000000000000000000000000000";
+		END IF;
 		DataOut <= tOut;
 			
 	END PROCESS;
