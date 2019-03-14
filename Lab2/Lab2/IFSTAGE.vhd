@@ -19,8 +19,10 @@
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.numeric_std.all;
 use IEEE.STD_LOGIC_SIGNED.ALL;
-use ieee.std_logic_arith.all;
+--use ieee.STD_LOGIC_UNSIGNED.all;
+--use ieee.std_logic_arith.all;
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
@@ -82,6 +84,8 @@ SIGNAL dummyWe : STD_LOGIC := '0';
 SIGNAL dummyAddr : STD_LOGIC_VECTOR(10 DOWNTO 0) := (OTHERS => '0');
 SIGNAL dummyDin : STD_LOGIC_VECTOR(31 DOWNTO 0) := (OTHERS => '0');
 SIGNAL dummyInstr : STD_LOGIC_VECTOR(31 DOWNTO 0) := (OTHERS => '0');
+
+SIGNAL MULTIPLIER : STD_LOGIC_VECTOR(31 DOWNTO 0);
 	 
 
 begin
@@ -113,8 +117,15 @@ RAMCOM : RAM PORT MAP (
 	
 
 PC1<=PCOUT;
+
+--MULTIPLIER <= signed(PC_IMMED) * 4;
+--PC_IMMED <= std_logic_vector(MULTIPLIER);
+
 MUXIN1 <= PCOUT + 4;
-MUXIN2 <= PCOUT + 4 + PC_IMMED;
+--MUXIN2 <= PCOUT + 4 + PC_IMMED * 4;
+MULTIPLIER <= std_logic_vector(signed(PC_IMMED)*4);
+MUXIN2 <= PCOUT + 4 + MULTIPLIER;
+
 ADDROUT <= PCOUT(12 DOWNTO 2);
 end Behavioral;
 

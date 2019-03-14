@@ -1,3 +1,0 @@
-vhdl work "RAM.vhd"
-vhdl work "MEMSTAGE.vhd"
-vhdl work "TEST_MEMSTAGE.vhd"

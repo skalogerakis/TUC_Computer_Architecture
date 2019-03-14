@@ -115,11 +115,14 @@ BEGIN
 		wait for Clk_period*2;
 		
 		RESET <='0';
-		PC_IMMED <= "00000000000000000110000000001100";
+		PC_IMMED <= "00000000000000000000000000011100";
       PC_SEL <= '1';
-      PC_LDEN <= '0';
+      PC_LDEN <= '1';
 		
-			
+		
+		wait for Clk_period*3;
+		RESET <='0';
+		PC_LDEN <= '0';
 		
 		wait ;
 	end process;

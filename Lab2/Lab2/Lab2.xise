@@ -107,6 +107,30 @@
       <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="50"/>
       <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="50"/>
     </file>
+    <file xil_pn:name="C:/Users/user/Downloads/LAB_D-20190314T213824Z-001/LAB_D/DECSTAGE.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="46"/>
+    </file>
+    <file xil_pn:name="C:/Users/user/Downloads/LAB_D-20190314T213824Z-001/LAB_D/MUX10to5.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="47"/>
+    </file>
+    <file xil_pn:name="C:/Users/user/Downloads/LAB_D-20190314T213824Z-001/LAB_D/MUX10to5_TEST.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="48"/>
+    </file>
+    <file xil_pn:name="C:/Users/user/Downloads/LAB_D-20190314T213824Z-001/LAB_D/MUX64to32.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="49"/>
+    </file>
+    <file xil_pn:name="C:/Users/user/Downloads/LAB_D-20190314T213824Z-001/LAB_D/shiftBox.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="50"/>
+    </file>
+    <file xil_pn:name="C:/Users/user/Downloads/LAB_D-20190314T213824Z-001/LAB_D/shiftBox_TEST.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="51"/>
+    </file>
   </files>
 
   <properties>

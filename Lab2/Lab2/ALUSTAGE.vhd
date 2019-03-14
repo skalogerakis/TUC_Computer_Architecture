@@ -35,7 +35,8 @@ entity ALUSTAGE is
            Immed : in  STD_LOGIC_VECTOR (31 downto 0);
            ALU_Bin_sel : in  STD_LOGIC;
            ALU_func : in  STD_LOGIC_VECTOR (3 downto 0);
-           ALU_out : out  STD_LOGIC_VECTOR (31 downto 0));
+           ALU_out : out  STD_LOGIC_VECTOR (31 downto 0);
+			  ALU_zero: OUT  STD_LOGIC);	--after new version added this signal
 end ALUSTAGE;
 
 architecture Behavioral of ALUSTAGE is
@@ -62,7 +63,7 @@ COMPONENT MUX2TO1
     END COMPONENT;
 	 
 SIGNAL MUXOUT: STD_LOGIC_VECTOR (31 DOWNTO 0);
-SIGNAL ZERO : STD_LOGIC := '0';
+--SIGNAL ZERO : STD_LOGIC := '0';
 SIGNAL OVF : STD_LOGIC := '0';
 SIGNAL COUT : STD_LOGIC := '0';
 
@@ -80,7 +81,7 @@ ALUST: ALU PORT MAP(
          ALUB => MUXOUT,
          ALUOP => ALU_func,
          ALUOUT => ALU_out,
-         ALUZERO => ZERO,
+         ALUZERO => ALU_zero,	--after new version 
          ALUCOUT => COUT,
          ALUOVF => OVF
 			);

@@ -46,7 +46,8 @@ ARCHITECTURE behavior OF T_ALUSTAGE IS
          Immed : IN  std_logic_vector(31 downto 0);
          ALU_Bin_sel : IN  std_logic;
          ALU_func : IN  std_logic_vector(3 downto 0);
-         ALU_out : OUT  std_logic_vector(31 downto 0)
+         ALU_out : OUT  std_logic_vector(31 downto 0);
+			ALU_zero: OUT  STD_LOGIC	--added new version
         );
     END COMPONENT;
     
@@ -60,6 +61,7 @@ ARCHITECTURE behavior OF T_ALUSTAGE IS
 
  	--Outputs
    signal ALU_out : std_logic_vector(31 downto 0);
+	signal ALU_zero: std_logic; --added new version
    -- No clocks detected in port list. Replace <clock> below with 
    -- appropriate port name 
  
@@ -74,7 +76,8 @@ BEGIN
           Immed => Immed,
           ALU_Bin_sel => ALU_Bin_sel,
           ALU_func => ALU_func,
-          ALU_out => ALU_out
+          ALU_out => ALU_out,
+			 ALU_zero=> ALU_zero
         );
 
    -- Clock process definitions
