@@ -23,6 +23,9 @@
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ALUSTAGE_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="DECSTAGE_TEST_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="DECSTAGE_TEST_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="DECSTAGE_TEST_isim_beh.wdb"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="IFSTAGE_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="IFSTAGE_stx_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="MEMSTAGE_isim_beh.exe"/>
@@ -35,9 +38,7 @@
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="TEST_MEMSTAGE_isim_beh.exe"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="T_ALUSTAGE_isim_beh.exe"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="T_ALU_isim_beh.exe"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="T_IFSTAGE_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="T_IFSTAGE_isim_beh.exe"/>
-    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="T_IFSTAGE_isim_beh.wdb"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="T_MUX2TO1_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
@@ -51,7 +52,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1552604781" xil_pn:in_ck="-7262708770961938792" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1552604781">
+    <transform xil_pn:end_ts="1552605411" xil_pn:in_ck="-7262708770961938792" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1552605411">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="../../Lab1/Lab1_ALU/ALU.vhd"/>
@@ -72,6 +73,14 @@
       <outfile xil_pn:name="C:/Users/user/Downloads/LAB_D-20190314T213824Z-001/LAB_D/MUX64to32.vhd"/>
       <outfile xil_pn:name="C:/Users/user/Downloads/LAB_D-20190314T213824Z-001/LAB_D/shiftBox.vhd"/>
       <outfile xil_pn:name="C:/Users/user/Downloads/LAB_D-20190314T213824Z-001/LAB_D/shiftBox_TEST.vhd"/>
+      <outfile xil_pn:name="C:/Users/user/Downloads/drive-download-20190314T231407Z-001/DECSTAGE_TEST.vhd"/>
+      <outfile xil_pn:name="C:/Users/user/Downloads/drive-download-20190314T231407Z-001/Extender.vhd"/>
+      <outfile xil_pn:name="C:/Users/user/Downloads/drive-download-20190314T231407Z-001/decoder5x32.vhd"/>
+      <outfile xil_pn:name="C:/Users/user/Downloads/drive-download-20190314T231407Z-001/decoder5x32_TEST.vhd"/>
+      <outfile xil_pn:name="C:/Users/user/Downloads/drive-download-20190314T231407Z-001/extender_TEST.vhd"/>
+      <outfile xil_pn:name="C:/Users/user/Downloads/drive-download-20190314T231407Z-001/multiplexer32to1.vhd"/>
+      <outfile xil_pn:name="C:/Users/user/Downloads/drive-download-20190314T231407Z-001/regist.vhd"/>
+      <outfile xil_pn:name="C:/Users/user/Downloads/drive-download-20190314T231407Z-001/register_file.vhd"/>
       <outfile xil_pn:name="IFSTAGE.vhd"/>
       <outfile xil_pn:name="MEMSTAGE.vhd"/>
       <outfile xil_pn:name="MUX2TO1.vhd"/>
@@ -82,11 +91,11 @@
       <outfile xil_pn:name="T_IFSTAGE.vhd"/>
       <outfile xil_pn:name="T_MUX2TO1.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1552604060" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="792151034454524140" xil_pn:start_ts="1552604060">
+    <transform xil_pn:end_ts="1552605411" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-7625370484213520907" xil_pn:start_ts="1552605411">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1552604060" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="2765665863946220014" xil_pn:start_ts="1552604060">
+    <transform xil_pn:end_ts="1552605411" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="9180316639270973239" xil_pn:start_ts="1552605411">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
@@ -94,7 +103,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1552604781" xil_pn:in_ck="-7262708770961938792" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1552604781">
+    <transform xil_pn:end_ts="1552605411" xil_pn:in_ck="-7262708770961938792" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1552605411">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="../../Lab1/Lab1_ALU/ALU.vhd"/>
@@ -115,6 +124,14 @@
       <outfile xil_pn:name="C:/Users/user/Downloads/LAB_D-20190314T213824Z-001/LAB_D/MUX64to32.vhd"/>
       <outfile xil_pn:name="C:/Users/user/Downloads/LAB_D-20190314T213824Z-001/LAB_D/shiftBox.vhd"/>
       <outfile xil_pn:name="C:/Users/user/Downloads/LAB_D-20190314T213824Z-001/LAB_D/shiftBox_TEST.vhd"/>
+      <outfile xil_pn:name="C:/Users/user/Downloads/drive-download-20190314T231407Z-001/DECSTAGE_TEST.vhd"/>
+      <outfile xil_pn:name="C:/Users/user/Downloads/drive-download-20190314T231407Z-001/Extender.vhd"/>
+      <outfile xil_pn:name="C:/Users/user/Downloads/drive-download-20190314T231407Z-001/decoder5x32.vhd"/>
+      <outfile xil_pn:name="C:/Users/user/Downloads/drive-download-20190314T231407Z-001/decoder5x32_TEST.vhd"/>
+      <outfile xil_pn:name="C:/Users/user/Downloads/drive-download-20190314T231407Z-001/extender_TEST.vhd"/>
+      <outfile xil_pn:name="C:/Users/user/Downloads/drive-download-20190314T231407Z-001/multiplexer32to1.vhd"/>
+      <outfile xil_pn:name="C:/Users/user/Downloads/drive-download-20190314T231407Z-001/regist.vhd"/>
+      <outfile xil_pn:name="C:/Users/user/Downloads/drive-download-20190314T231407Z-001/register_file.vhd"/>
       <outfile xil_pn:name="IFSTAGE.vhd"/>
       <outfile xil_pn:name="MEMSTAGE.vhd"/>
       <outfile xil_pn:name="MUX2TO1.vhd"/>
@@ -125,20 +142,22 @@
       <outfile xil_pn:name="T_IFSTAGE.vhd"/>
       <outfile xil_pn:name="T_MUX2TO1.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1552604785" xil_pn:in_ck="-7262708770961938792" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-6530673296870186310" xil_pn:start_ts="1552604781">
+    <transform xil_pn:end_ts="1552605415" xil_pn:in_ck="-7262708770961938792" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="5573162978207173772" xil_pn:start_ts="1552605411">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="T_IFSTAGE_beh.prj"/>
-      <outfile xil_pn:name="T_IFSTAGE_isim_beh.exe"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="DECSTAGE_TEST_beh.prj"/>
+      <outfile xil_pn:name="DECSTAGE_TEST_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1552604786" xil_pn:in_ck="-6917068943483981143" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-9107977656158668505" xil_pn:start_ts="1552604785">
+    <transform xil_pn:end_ts="1552605607" xil_pn:in_ck="-2071892603072062953" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-1347585928965470503" xil_pn:start_ts="1552605607">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="T_IFSTAGE_isim_beh.wdb"/>
+      <outfile xil_pn:name="DECSTAGE_TEST_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
     </transform>

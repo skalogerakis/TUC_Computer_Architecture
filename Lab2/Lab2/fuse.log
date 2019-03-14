@@ -1,31 +1,37 @@
-Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o D:/TUC_PROJECT/TUC_Computer_Architecture/Lab2/Lab2/T_IFSTAGE_isim_beh.exe -prj D:/TUC_PROJECT/TUC_Computer_Architecture/Lab2/Lab2/T_IFSTAGE_beh.prj work.T_IFSTAGE 
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o D:/TUC_PROJECT/TUC_Computer_Architecture/Lab2/Lab2/DECSTAGE_TEST_isim_beh.exe -prj D:/TUC_PROJECT/TUC_Computer_Architecture/Lab2/Lab2/DECSTAGE_TEST_beh.prj work.DECSTAGE_TEST 
 ISim P.20131013 (signature 0x7708f090)
 Number of CPUs detected in this system: 4
 Turning on mult-threading, number of parallel sub-compilation jobs: 8 
 Determining compilation order of HDL files
-Parsing VHDL file "D:/TUC_PROJECT/TUC_Computer_Architecture/Lab2/Lab2/RAM.vhd" into library work
-Parsing VHDL file "D:/TUC_PROJECT/TUC_Computer_Architecture/Lab2/Lab2/PC.vhd" into library work
-Parsing VHDL file "D:/TUC_PROJECT/TUC_Computer_Architecture/Lab2/Lab2/MUX2TO1.vhd" into library work
-Parsing VHDL file "D:/TUC_PROJECT/TUC_Computer_Architecture/Lab2/Lab2/IFSTAGE.vhd" into library work
-Parsing VHDL file "D:/TUC_PROJECT/TUC_Computer_Architecture/Lab2/Lab2/T_IFSTAGE.vhd" into library work
+Parsing VHDL file "C:/Users/user/Downloads/drive-download-20190314T231407Z-001/regist.vhd" into library work
+Parsing VHDL file "C:/Users/user/Downloads/drive-download-20190314T231407Z-001/multiplexer32to1.vhd" into library work
+Parsing VHDL file "C:/Users/user/Downloads/drive-download-20190314T231407Z-001/decoder5x32.vhd" into library work
+Parsing VHDL file "C:/Users/user/Downloads/LAB_D-20190314T213824Z-001/LAB_D/shiftBox.vhd" into library work
+Parsing VHDL file "C:/Users/user/Downloads/LAB_D-20190314T213824Z-001/LAB_D/MUX64to32.vhd" into library work
+Parsing VHDL file "C:/Users/user/Downloads/LAB_D-20190314T213824Z-001/LAB_D/MUX10to5.vhd" into library work
+Parsing VHDL file "C:/Users/user/Downloads/drive-download-20190314T231407Z-001/register_file.vhd" into library work
+Parsing VHDL file "C:/Users/user/Downloads/drive-download-20190314T231407Z-001/Extender.vhd" into library work
+Parsing VHDL file "C:/Users/user/Downloads/LAB_D-20190314T213824Z-001/LAB_D/DECSTAGE.vhd" into library work
+Parsing VHDL file "C:/Users/user/Downloads/drive-download-20190314T231407Z-001/DECSTAGE_TEST.vhd" into library work
 Starting static elaboration
 Completed static elaboration
 Compiling package standard
 Compiling package std_logic_1164
-Compiling package numeric_std
+Compiling architecture behavioral of entity Extender [extender_default]
+Compiling architecture behavioral of entity MUX10to5 [mux10to5_default]
+Compiling architecture behavioral of entity MUX64to32 [mux64to32_default]
 Compiling package std_logic_arith
-Compiling package std_logic_signed
 Compiling package std_logic_unsigned
-Compiling package textio
-Compiling package std_logic_textio
-Compiling architecture behavioral of entity MUX2TO1 [mux2to1_default]
-Compiling architecture behavioral of entity PC [pc_default]
-Compiling architecture syn of entity RAM [ram_default]
-Compiling architecture behavioral of entity IFSTAGE [ifstage_default]
-Compiling architecture behavior of entity t_ifstage
+Compiling architecture behavioral of entity decoder5x32 [decoder5x32_default]
+Compiling architecture mux of entity multiplexer32to1 [multiplexer32to1_default]
+Compiling architecture behavior of entity regist [regist_default]
+Compiling architecture behavioral of entity register_file [register_file_default]
+Compiling architecture behavioral of entity shiftBox [shiftbox_default]
+Compiling architecture behavioral of entity DECSTAGE [decstage_default]
+Compiling architecture behavior of entity decstage_test
 Time Resolution for simulation is 1ps.
-Waiting for 5 sub-compilation(s) to finish...
-Compiled 17 VHDL Units
-Built simulation executable D:/TUC_PROJECT/TUC_Computer_Architecture/Lab2/Lab2/T_IFSTAGE_isim_beh.exe
-Fuse Memory Usage: 45596 KB
-Fuse CPU Usage: 624 ms
+Waiting for 3 sub-compilation(s) to finish...
+Compiled 23 VHDL Units
+Built simulation executable D:/TUC_PROJECT/TUC_Computer_Architecture/Lab2/Lab2/DECSTAGE_TEST_isim_beh.exe
+Fuse Memory Usage: 36884 KB
+Fuse CPU Usage: 827 ms

@@ -1,5 +1,5 @@
 ISim log file
-Running: D:\TUC_PROJECT\TUC_Computer_Architecture\Lab2\Lab2\T_IFSTAGE_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb D:/TUC_PROJECT/TUC_Computer_Architecture/Lab2/Lab2/T_IFSTAGE_isim_beh.wdb 
+Running: D:\TUC_PROJECT\TUC_Computer_Architecture\Lab2\Lab2\DECSTAGE_TEST_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb D:/TUC_PROJECT/TUC_Computer_Architecture/Lab2/Lab2/DECSTAGE_TEST_isim_beh.wdb 
 ISim P.20131013 (signature 0x7708f090)
 WARNING: A WEBPACK license was found.
 WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
@@ -10,6 +10,4 @@ Time resolution is 1 ps
 # wave add /
 # run 1000 ns
 Simulator is doing circuit initialization process.
-at 0 ps, Instance /t_ifstage/uut/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-at 0 ps, Instance /t_ifstage/uut/RAMCOM/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 Finished circuit initialization process.
