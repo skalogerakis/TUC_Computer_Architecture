@@ -120,15 +120,15 @@ BEGIN
 		Mem_WrEn <= '1' ;
 		
 		wait for Clk_period *5;
-		ALU_MEM_Addr <= "00000000000000000000000000001100" ;
+		ALU_MEM_Addr <= "00000000000000000010000000001100" ;
 		Mem_WrEn <= '0' ;
 		
 		wait for Clk_period *5;
-		ALU_MEM_Addr <= "00000000000000000000000000011100" ;
+		ALU_MEM_Addr <= "00000000000000000010000000011100" ;
 		Mem_WrEn <= '0' ;
 		
 		wait for Clk_period *5;
-		ALU_MEM_Addr <= "00000000000000000000000001111100" ;
+		ALU_MEM_Addr <= "00000000000000000010000001111100" ;
 		Mem_WrEn <= '0' ;
 		
 		wait for Clk_period *5;	--zero expected

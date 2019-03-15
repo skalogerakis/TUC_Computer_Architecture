@@ -85,7 +85,8 @@ SIGNAL dummyAddr : STD_LOGIC_VECTOR(10 DOWNTO 0) := (OTHERS => '0');
 SIGNAL dummyDin : STD_LOGIC_VECTOR(31 DOWNTO 0) := (OTHERS => '0');
 SIGNAL dummyInstr : STD_LOGIC_VECTOR(31 DOWNTO 0) := (OTHERS => '0');
 
-SIGNAL MULTIPLIER : STD_LOGIC_VECTOR(31 DOWNTO 0);
+SIGNAL MULTIPLIER32 : STD_LOGIC_VECTOR(31 DOWNTO 0);
+SIGNAL MULTIPLIER : integer;
 	 
 
 begin
@@ -117,14 +118,15 @@ RAMCOM : RAM PORT MAP (
 	
 
 PC1<=PCOUT;
-
---MULTIPLIER <= signed(PC_IMMED) * 4;
+--MULTIPLIER <= signed(PC_IMMED);
+MULTIPLIER <= to_integer(unsigned(PC_IMMED)) * 4;
+MULTIPLIER32 <= std_logic_vector(to_unsigned(MULTIPLIER, 32));
 --PC_IMMED <= std_logic_vector(MULTIPLIER);
 
 MUXIN1 <= PCOUT + 4;
---MUXIN2 <= PCOUT + 4 + PC_IMMED * 4;
-MULTIPLIER <= std_logic_vector(signed(PC_IMMED)*4);
-MUXIN2 <= PCOUT + 4 + MULTIPLIER;
+MUXIN2 <= PCOUT + 4 + MULTIPLIER32;
+--MULTIPLIER <= std_logic_vector(signed(PC_IMMED)*4);
+--MUXIN2 <= PCOUT + 4 + MULTIPLIER;
 
 ADDROUT <= PCOUT(12 DOWNTO 2);
 end Behavioral;

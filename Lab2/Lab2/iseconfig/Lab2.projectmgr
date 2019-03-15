@@ -77,20 +77,25 @@
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
          <ClosedNode>/ALUSTAGE - Behavioral D:|TUC_PROJECT|TUC_Computer_Architecture|Lab2|Lab2|ALUSTAGE.vhd</ClosedNode>
-         <ClosedNode>/TEST_MEMSTAGE - behavior D:|TUC_PROJECT|TUC_Computer_Architecture|Lab2|Lab2|TEST_MEMSTAGE.vhd/uut - MEMSTAGE - Behavioral</ClosedNode>
+         <ClosedNode>/DECSTAGE - Behavioral C:|Users|user|Downloads|LAB_D-20190314T213824Z-001|LAB_D|DECSTAGE.vhd</ClosedNode>
+         <ClosedNode>/DECSTAGE_TEST - behavior C:|Users|user|Downloads|drive-download-20190314T231407Z-001|DECSTAGE_TEST.vhd</ClosedNode>
+         <ClosedNode>/MUX10to5_TEST - behavior C:|Users|user|Downloads|LAB_D-20190314T213824Z-001|LAB_D|MUX10to5_TEST.vhd</ClosedNode>
+         <ClosedNode>/TEST_MEMSTAGE - behavior D:|TUC_PROJECT|TUC_Computer_Architecture|Lab2|Lab2|TEST_MEMSTAGE.vhd</ClosedNode>
          <ClosedNode>/T_ALU - behavior D:|TUC_PROJECT|TUC_Computer_Architecture|Lab1|Lab1_ALU|T_ALU.vhd</ClosedNode>
          <ClosedNode>/T_ALUSTAGE - behavior D:|TUC_PROJECT|TUC_Computer_Architecture|Lab2|Lab2|T_ALUSTAGE.vhd</ClosedNode>
-         <ClosedNode>/T_IFSTAGE - behavior D:|TUC_PROJECT|TUC_Computer_Architecture|Lab2|Lab2|T_IFSTAGE.vhd</ClosedNode>
+         <ClosedNode>/T_ALUSTAGE - behavior D:|TUC_PROJECT|TUC_Computer_Architecture|Lab2|Lab2|T_ALUSTAGE.vhd/uut - ALUSTAGE - Behavioral</ClosedNode>
+         <ClosedNode>/T_IFSTAGE - behavior D:|TUC_PROJECT|TUC_Computer_Architecture|Lab2|Lab2|T_IFSTAGE.vhd/uut - IFSTAGE - Behavioral</ClosedNode>
          <ClosedNode>/T_MUX2TO1 - behavior D:|TUC_PROJECT|TUC_Computer_Architecture|Lab2|Lab2|T_MUX2TO1.vhd</ClosedNode>
+         <ClosedNode>/decoder5x32_TEST - behavior C:|Users|user|Downloads|drive-download-20190314T231407Z-001|decoder5x32_TEST.vhd</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>uut - shiftBox - Behavioral (C:/Users/user/Downloads/LAB_D-20190314T213824Z-001/LAB_D/shiftBox.vhd)</SelectedItem>
+         <SelectedItem>T_IFSTAGE - behavior (D:/TUC_PROJECT/TUC_Computer_Architecture/Lab2/Lab2/T_IFSTAGE.vhd)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000197000000020000000000000000000000000200000064ffffffff000000810000000300000002000001970000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000161000000020000000000000000000000000200000064ffffffff000000810000000300000002000001610000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>uut - shiftBox - Behavioral (C:/Users/user/Downloads/LAB_D-20190314T213824Z-001/LAB_D/shiftBox.vhd)</CurrentItem>
+      <CurrentItem>T_IFSTAGE - behavior (D:/TUC_PROJECT/TUC_Computer_Architecture/Lab2/Lab2/T_IFSTAGE.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -111,12 +116,12 @@
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem>ISim Simulator</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001af000000010000000100000000000000000000000064ffffffff000000810000000000000001000001af0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem>ISim Simulator</CurrentItem>
    </ItemView>
 </Project>
