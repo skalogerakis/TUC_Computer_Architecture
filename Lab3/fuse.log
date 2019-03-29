@@ -1,79 +1,37 @@
-Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o D:/TUC_PROJECT/TUC_Computer_Architecture/Lab3/TOP_LEVEL_TEST_isim_beh.exe -prj D:/TUC_PROJECT/TUC_Computer_Architecture/Lab3/TOP_LEVEL_TEST_beh.prj work.TOP_LEVEL_TEST 
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -o "D:/TUC_PROJECT/TUC_Computer_Architecture/Lab3/DECSTAGE_TEST_isim_beh.exe" -prj "D:/TUC_PROJECT/TUC_Computer_Architecture/Lab3/DECSTAGE_TEST_beh.prj" "work.DECSTAGE_TEST" 
 ISim P.20131013 (signature 0x7708f090)
 Number of CPUs detected in this system: 4
 Turning on mult-threading, number of parallel sub-compilation jobs: 8 
 Determining compilation order of HDL files
-Parsing VHDL file "G:/lab3_test/Subtraction32BIT.vhd" into library work
-Parsing VHDL file "G:/lab3_test/SRLOGIC.vhd" into library work
-Parsing VHDL file "G:/lab3_test/SRARITH32BIT.vhd" into library work
-Parsing VHDL file "G:/lab3_test/SLLOGIC.vhd" into library work
-Parsing VHDL file "G:/lab3_test/ROTR.vhd" into library work
-Parsing VHDL file "G:/lab3_test/ROTL.vhd" into library work
 Parsing VHDL file "G:/lab3_test/regist.vhd" into library work
-Parsing VHDL file "G:/lab3_test/OR32BIT.vhd" into library work
 Parsing VHDL file "G:/lab3_test/multiplexer32to1.vhd" into library work
 Parsing VHDL file "G:/lab3_test/decoder5x32.vhd" into library work
-Parsing VHDL file "G:/lab3_test/AND32BIT.vhd" into library work
-Parsing VHDL file "G:/lab3_test/Addition32BIT.vhd" into library work
 Parsing VHDL file "G:/lab3_test/shiftBox.vhd" into library work
 Parsing VHDL file "G:/lab3_test/register_file.vhd" into library work
-Parsing VHDL file "G:/lab3_test/PC.vhd" into library work
 Parsing VHDL file "G:/lab3_test/MUX64to32.vhd" into library work
-Parsing VHDL file "G:/lab3_test/MUX2TO1.vhd" into library work
 Parsing VHDL file "G:/lab3_test/MUX10to5.vhd" into library work
-Parsing VHDL file "G:/lab3_test/Lab1_A/ALU.vhd" into library work
 Parsing VHDL file "G:/lab3_test/Extender.vhd" into library work
-Parsing VHDL file "G:/lab3_test/RAM.vhd" into library work
-Parsing VHDL file "G:/lab3_test/IFSTAGE.vhd" into library work
 Parsing VHDL file "G:/lab3_test/DECSTAGE.vhd" into library work
-Parsing VHDL file "G:/lab3_test/BRANCH_BOX.vhd" into library work
-Parsing VHDL file "G:/lab3_test/ALUSTAGE.vhd" into library work
-Parsing VHDL file "G:/lab3_test/DATAPATH.vhd" into library work
-Parsing VHDL file "G:/lab3_test/CONTROL.vhd" into library work
-Parsing VHDL file "G:/lab3_test/TOP_LEVEL.vhd" into library work
-Parsing VHDL file "G:/lab3_test/TOP_LEVEL_TEST.vhd" into library work
+Parsing VHDL file "G:/lab3_test/DECSTAGE_TEST.vhd" into library work
 Starting static elaboration
 Completed static elaboration
 Compiling package standard
 Compiling package std_logic_1164
-Compiling package std_logic_arith
-Compiling package std_logic_signed
-Compiling architecture behavioral of entity CONTROL [control_default]
-Compiling package numeric_std
-Compiling package std_logic_unsigned
-Compiling package textio
-Compiling package std_logic_textio
 Compiling architecture behavioral of entity Extender [extender_default]
 Compiling architecture behavioral of entity MUX10to5 [mux10to5_default]
 Compiling architecture behavioral of entity MUX64to32 [mux64to32_default]
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
 Compiling architecture behavioral of entity decoder5x32 [decoder5x32_default]
 Compiling architecture mux of entity multiplexer32to1 [multiplexer32to1_default]
 Compiling architecture behavior of entity regist [regist_default]
 Compiling architecture behavioral of entity register_file [register_file_default]
 Compiling architecture behavioral of entity shiftBox [shiftbox_default]
 Compiling architecture behavioral of entity DECSTAGE [decstage_default]
-Compiling architecture behavioral of entity MUX2TO1 [mux2to1_default]
-Compiling architecture behavioral of entity Addition32BIT [addition32bit_default]
-Compiling architecture behavioral of entity Subtraction32BIT [subtraction32bit_default]
-Compiling architecture behavioral of entity AND32BIT [and32bit_default]
-Compiling architecture behavioral of entity OR32BIT [or32bit_default]
-Compiling architecture behavioral of entity SRARITH32BIT [srarith32bit_default]
-Compiling architecture behavioral of entity SRLOGIC [srlogic_default]
-Compiling architecture behavioral of entity SLLOGIC [sllogic_default]
-Compiling architecture behavioral of entity ROTL [rotl_default]
-Compiling architecture behavioral of entity ROTR [rotr_default]
-Compiling architecture behavioral of entity ALU [alu_default]
-Compiling architecture behavioral of entity ALUSTAGE [alustage_default]
-Compiling architecture behavioral of entity PC [pc_default]
-Compiling architecture behavioral of entity IFSTAGE [ifstage_default]
-Compiling architecture syn of entity RAM [ram_default]
-Compiling architecture behavioral of entity BRANCH_BOX [branch_box_default]
-Compiling architecture behavioral of entity DATAPATH [datapath_default]
-Compiling architecture behavioral of entity TOP_LEVEL [top_level_default]
-Compiling architecture behavior of entity top_level_test
+Compiling architecture behavior of entity decstage_test
 Time Resolution for simulation is 1ps.
-Waiting for 18 sub-compilation(s) to finish...
-Compiled 65 VHDL Units
-Built simulation executable D:/TUC_PROJECT/TUC_Computer_Architecture/Lab3/TOP_LEVEL_TEST_isim_beh.exe
-Fuse Memory Usage: 51540 KB
-Fuse CPU Usage: 1014 ms
+Waiting for 3 sub-compilation(s) to finish...
+Compiled 23 VHDL Units
+Built simulation executable D:/TUC_PROJECT/TUC_Computer_Architecture/Lab3/DECSTAGE_TEST_isim_beh.exe
+Fuse Memory Usage: 37448 KB
+Fuse CPU Usage: 655 ms

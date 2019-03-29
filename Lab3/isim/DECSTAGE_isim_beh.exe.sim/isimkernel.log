@@ -1,0 +1,29 @@
+Command line:
+   DECSTAGE_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  51603
+
+Fri Mar 29 06:13:12 2019
+
+
+ Elaboration Time: 0.0625 sec
+
+ Current Memory Usage: 5335.73 Meg
+
+ Total Signals          : 367
+ Total Nets             : 1400
+ Total Signal Drivers   : 135
+ Total Blocks           : 233
+ Total Primitive Blocks : 135
+ Total Processes        : 134
+ Total Traceable Variables  : 137
+ Total Scalar Nets and Variables : 1905
+Total Line Count : 2232
+
+ Total Simulation Time: 0.0625 sec
+
+ Current Memory Usage: 5335.73 Meg
+
+Fri Mar 29 06:13:18 2019
+

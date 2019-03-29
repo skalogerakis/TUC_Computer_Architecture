@@ -1,0 +1,10 @@
+Command line:
+   DECSTAGE_TEST_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  51611
+
+Fri Mar 29 06:15:16 2019
+
+
+ Elaboration Time: 0.046875 sec
