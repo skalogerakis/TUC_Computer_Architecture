@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -o "D:/TUC_PROJECT/TUC_Computer_Architecture/Lab3/DECSTAGE_TEST_isim_beh.exe" -prj "D:/TUC_PROJECT/TUC_Computer_Architecture/Lab3/DECSTAGE_TEST_beh.prj" "work.DECSTAGE_TEST" 
+-intstyle "ise" -incremental -o "D:/TUC_PROJECT/TUC_Computer_Architecture/Lab3/TOP_LEVEL_TEST_isim_beh.exe" -prj "D:/TUC_PROJECT/TUC_Computer_Architecture/Lab3/TOP_LEVEL_TEST_beh.prj" "work.TOP_LEVEL_TEST" 

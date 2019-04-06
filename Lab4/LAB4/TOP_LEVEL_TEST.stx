@@ -1,0 +1,111 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to D:/TUC_PROJECT/TUC_Computer_Architecture/Lab4/LAB4/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> Parameter xsthdpdir set to D:/TUC_PROJECT/TUC_Computer_Architecture/Lab4/LAB4/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "D:/TUC_PROJECT/TUC_Computer_Architecture/Lab4/Addition32BIT.vhd" in Library work.
+Entity <Addition32BIT> compiled.
+Entity <Addition32BIT> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "D:/TUC_PROJECT/TUC_Computer_Architecture/Lab4/Subtraction32BIT.vhd" in Library work.
+Entity <Subtraction32BIT> compiled.
+Entity <Subtraction32BIT> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "D:/TUC_PROJECT/TUC_Computer_Architecture/Lab4/AND32BIT.vhd" in Library work.
+Entity <AND32BIT> compiled.
+Entity <AND32BIT> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "D:/TUC_PROJECT/TUC_Computer_Architecture/Lab4/OR32BIT.vhd" in Library work.
+Entity <OR32BIT> compiled.
+Entity <OR32BIT> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "D:/TUC_PROJECT/TUC_Computer_Architecture/Lab4/SRARITH32BIT.vhd" in Library work.
+Entity <SRARITH32BIT> compiled.
+Entity <SRARITH32BIT> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "D:/TUC_PROJECT/TUC_Computer_Architecture/Lab4/SRLOGIC.vhd" in Library work.
+Entity <SRLOGIC> compiled.
+Entity <SRLOGIC> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "D:/TUC_PROJECT/TUC_Computer_Architecture/Lab4/SLLOGIC.vhd" in Library work.
+Entity <SLLOGIC> compiled.
+Entity <SLLOGIC> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "D:/TUC_PROJECT/TUC_Computer_Architecture/Lab4/ROTL.vhd" in Library work.
+Entity <ROTL> compiled.
+Entity <ROTL> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "D:/TUC_PROJECT/TUC_Computer_Architecture/Lab4/ROTR.vhd" in Library work.
+Entity <ROTR> compiled.
+Entity <ROTR> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "D:/TUC_PROJECT/TUC_Computer_Architecture/Lab4/decoder5x32.vhd" in Library work.
+Entity <decoder5x32> compiled.
+Entity <decoder5x32> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "D:/TUC_PROJECT/TUC_Computer_Architecture/Lab4/multiplexer32to1.vhd" in Library work.
+Entity <multiplexer32to1> compiled.
+Entity <multiplexer32to1> (Architecture <mux>) compiled.
+Compiling vhdl file "D:/TUC_PROJECT/TUC_Computer_Architecture/Lab4/regist.vhd" in Library work.
+Entity <regist> compiled.
+Entity <regist> (Architecture <Behavior>) compiled.
+Compiling vhdl file "D:/TUC_PROJECT/TUC_Computer_Architecture/Lab4/MUX2TO1.vhd" in Library work.
+Entity <MUX2TO1> compiled.
+Entity <MUX2TO1> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "D:/TUC_PROJECT/TUC_Computer_Architecture/Lab4/PC.vhd" in Library work.
+Entity <PC> compiled.
+Entity <PC> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "D:/TUC_PROJECT/TUC_Computer_Architecture/Lab4/ALU.vhd" in Library work.
+Entity <ALU> compiled.
+WARNING:HDLParsers:817 - "D:/TUC_PROJECT/TUC_Computer_Architecture/Lab4/ALU.vhd" Line 241. Choice ZEROOUTPUT is not a locally static expression.
+Entity <ALU> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "D:/TUC_PROJECT/TUC_Computer_Architecture/Lab4/Extender.vhd" in Library work.
+Entity <Extender> compiled.
+Entity <Extender> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "D:/TUC_PROJECT/TUC_Computer_Architecture/Lab4/MUX10to5.vhd" in Library work.
+Entity <MUX10to5> compiled.
+Entity <MUX10to5> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "D:/TUC_PROJECT/TUC_Computer_Architecture/Lab4/MUX64to32.vhd" in Library work.
+Entity <MUX64to32> compiled.
+Entity <MUX64to32> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "D:/TUC_PROJECT/TUC_Computer_Architecture/Lab4/register_file.vhd" in Library work.
+Entity <register_file> compiled.
+Entity <register_file> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "D:/TUC_PROJECT/TUC_Computer_Architecture/Lab4/shiftBox.vhd" in Library work.
+Entity <shiftBox> compiled.
+Entity <shiftBox> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "D:/TUC_PROJECT/TUC_Computer_Architecture/Lab4/DECSTAGE.vhd" in Library work.
+Entity <DECSTAGE> compiled.
+Entity <DECSTAGE> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "D:/TUC_PROJECT/TUC_Computer_Architecture/Lab4/ALUSTAGE.vhd" in Library work.
+Entity <ALUSTAGE> compiled.
+Entity <ALUSTAGE> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "D:/TUC_PROJECT/TUC_Computer_Architecture/Lab4/IFSTAGE.vhd" in Library work.
+Entity <IFSTAGE> compiled.
+Entity <IFSTAGE> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "D:/TUC_PROJECT/TUC_Computer_Architecture/Lab4/RAM.vhd" in Library work.
+Entity <RAM> compiled.
+Entity <RAM> (Architecture <syn>) compiled.
+Compiling vhdl file "D:/TUC_PROJECT/TUC_Computer_Architecture/Lab4/BRANCH_BOX.vhd" in Library work.
+Entity <BRANCH_BOX> compiled.
+Entity <BRANCH_BOX> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "D:/TUC_PROJECT/TUC_Computer_Architecture/Lab4/CONTROL.vhd" in Library work.
+Entity <CONTROL> compiled.
+ERROR:HDLParsers:811 - "D:/TUC_PROJECT/TUC_Computer_Architecture/Lab4/CONTROL.vhd" Line 142. Choice 000011 duplicated in case.
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.81 secs
+ 
+--> 
+
+Total memory usage is 4513704 kilobytes
+
+Number of errors   :    1 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

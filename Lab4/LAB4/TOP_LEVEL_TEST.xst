@@ -1,0 +1,5 @@
+set -tmpdir "D:/TUC_PROJECT/TUC_Computer_Architecture/Lab4/LAB4/xst/projnav.tmp"
+set -xsthdpdir "D:/TUC_PROJECT/TUC_Computer_Architecture/Lab4/LAB4/xst"
+elaborate
+-ifn TOP_LEVEL_TEST.prj
+-ifmt mixed
