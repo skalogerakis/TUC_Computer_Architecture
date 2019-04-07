@@ -69,8 +69,8 @@ begin
 	begin
 		
 		WAIT UNTIL clk'EVENT AND clk='1';  
-		if(RESET ='1') then
-			STATE<=START;
+		if(RESET ='1') then -- RESET STHN ARXH
+			STATE<=START; -- MALLON OXI
 		else
 			if(STATE = START) then
 				STATE<=DECRYPT;
@@ -79,7 +79,7 @@ begin
 			elsif(STATE = DELAY) then
 				STATE<=DECRYPT;
 			elsif(STATE = DECRYPT) then
-				if OPCODE = "100000" then
+				if OPCODE = "100000" then -- REGISTER TYPE CASES
 					if(ALU_IN = "110000") then
 						STATE<=R_add;
 					elsif ALU_IN = "110001" then 
@@ -109,20 +109,26 @@ begin
 				elsif OPCODE = "110010" then STATE<=nandi;
 				elsif OPCODE = "110011" then STATE<=ori;
 				elsif OPCODE = "111111" then STATE<=b;
---												elsif OPCODE = "000000" then STATE<=beq;
---												elsif OPCODE = "000001" then STATE<=bne;
---												elsif OPCODE = "000011" then STATE<=lb;
---												elsif OPCODE = "000111" then STATE<=sb;
-				elsif OPCODE = "001111" then STATE<=lw;
-				elsif OPCODE = "011111" then STATE<=sw;
-				--elsif(STATE = b) then
-				--	STATE <= DELAY;			
+				elsif OPCODE = "000000" then STATE<=beq;
+				elsif OPCODE = "000001" then STATE<=bne;
+				elsif OPCODE = "000011" then 
+					STATE<=lb;
+				elsif OPCODE = "000111" then 
+					STATE<=sb;
+				elsif OPCODE = "001111" then 
+					STATE<=lw;
+				elsif OPCODE = "011111" then 
+					STATE<=sw;				
 				else STATE<=START ; 
 				end if;
-			elsif(STATE = lw) then
+			elsif(STATE = lw) then -- STATES GIA ENTOLES SW LW
 				STATE <= lwDelay;
+			elsif(STATE = lb) then -- STATES GIA ENTOLES SW LW
+				STATE <= lbDelay;
 			elsif(STATE = sw) then
-				STATE <= swDelay;	
+				STATE <= swDelay;
+			elsif(STATE = sb) then -- STATES GIA ENTOLES SW LW
+				STATE <= sbDelay;				
 			else
 				STATE<=FETCH;
 			end if;
@@ -360,6 +366,34 @@ begin
 			
 			ALU_BIN_SEL <='1'; -- immediate 
 			ALU_FUNC <="0000"; --add
+		when sb =>	--todo fix
+			RF_B_SEL <= '1';
+			IMM_EXT <='1';
+			RF_WRDATA_SEL <='0'; --we dont care
+			REG_WRITE_EN <='0'; -- we dont write any reg 
+			imm_Shift <='0'; -- PENDING
+			BYTE_CASE <='1';
+			
+			PC_LOAD_EN <='0'; 
+			
+			MEM_WREN <='0'; -- WE WRITE IN OUR MEMORY
+			
+			ALU_BIN_SEL <='1'; -- immediate 
+			ALU_FUNC <="0000"; --add
+		when sbDelay =>	-- sw immediate format
+			RF_B_SEL <= '1';
+			IMM_EXT <='1';
+			RF_WRDATA_SEL <='0'; --we dont care
+			REG_WRITE_EN <='0'; -- we dont write any reg 
+			imm_Shift <='0'; -- PENDING
+			BYTE_CASE <='1';
+			
+			PC_LOAD_EN <='0'; 
+			
+			MEM_WREN <='1'; -- WE WRITE IN OUR MEMORY
+			
+			ALU_BIN_SEL <='1'; -- immediate 
+			ALU_FUNC <="0000"; --add
 		when lw =>	-- lw immediate format
 			RF_B_SEL <= '1';
 			IMM_EXT <='1';
@@ -382,6 +416,61 @@ begin
 			MEM_WREN <='0'; -- WE dont WRITE IN OUR MEMORY
 			ALU_BIN_SEL <='1'; -- immediate 
 			ALU_FUNC <="0000"; --add
+		when lb =>	-- lw immediate format
+			RF_B_SEL <= '1';
+			IMM_EXT <='1';
+			RF_WRDATA_SEL <='0'; -- memory data
+			REG_WRITE_EN <='0'; -- we  write  reg 
+			imm_Shift <='0'; -- PENDING
+			BYTE_CASE <='1';
+			PC_LOAD_EN <='0'; 
+			MEM_WREN <='0'; -- WE dont WRITE IN OUR MEMORY
+			ALU_BIN_SEL <='1'; -- immediate 
+			ALU_FUNC <="0000"; --add
+		when lbDelay =>	-- lw immediate format
+			RF_B_SEL <= '1';
+			IMM_EXT <='1';
+			RF_WRDATA_SEL <='1'; -- memory data
+			REG_WRITE_EN <='1'; -- we  write  reg 
+			imm_Shift <='0'; -- PENDING
+			BYTE_CASE <='1';
+			PC_LOAD_EN <='0'; 
+			MEM_WREN <='0'; -- WE dont WRITE IN OUR MEMORY
+			ALU_BIN_SEL <='1'; -- immediate 
+			ALU_FUNC <="0000"; --add
+		when b =>	-- b case format
+			RF_B_SEL <= '1'; --21-16
+			IMM_EXT <='1';
+			RF_WRDATA_SEL <='0'; -- no need for write
+			REG_WRITE_EN <='0'; -- we dont  write  reg 
+			imm_Shift <='0'; -- PENDING
+			BYTE_CASE <='0';
+			PC_LOAD_EN <='0'; 
+			MEM_WREN <='0'; -- WE dont WRITE IN OUR MEMORY
+			ALU_BIN_SEL <='0'; -- register ops 
+			ALU_FUNC <="0001"; --sub
+		when bne =>	-- bne case format
+			RF_B_SEL <= '1'; --21-16
+			IMM_EXT <='1'; 
+			RF_WRDATA_SEL <='0'; -- no need for write
+			REG_WRITE_EN <='0'; -- we dont  write  reg 
+			imm_Shift <='0'; -- PENDING
+			BYTE_CASE <='0';
+			PC_LOAD_EN <='0'; 
+			MEM_WREN <='0'; -- WE dont WRITE IN OUR MEMORY
+			ALU_BIN_SEL <='0'; -- register ops 
+			ALU_FUNC <="0001"; --sub
+		when beq =>	-- beq case format
+			RF_B_SEL <= '1'; --21-16
+			IMM_EXT <='1';
+			RF_WRDATA_SEL <='0'; -- no need for write
+			REG_WRITE_EN <='0'; -- we dont  write  reg 
+			imm_Shift <='0'; -- PENDING
+			BYTE_CASE <='0';
+			PC_LOAD_EN <='0'; 
+			MEM_WREN <='0'; -- WE dont WRITE IN OUR MEMORY
+			ALU_BIN_SEL <='0'; -- register ops 
+			ALU_FUNC <="0001"; --sub
 		WHEN OTHERS =>
 			RF_B_SEL <='0';
 			IMM_EXT <='0';
@@ -394,102 +483,8 @@ begin
 			ALU_BIN_SEL <= '0';	
 			ALU_FUNC <="0000";
 	end case;
-	end process;
-	--case OPCODE is
-	
-		--when "110000" =>	-- addi
-			--RF_B_SEL <= '1';
-			--IMM_EXT <='1';
-			--RF_WRDATA_SEL <='0'; --alu
-			--REG_WRITE_EN <='1';
-			--imm_Shift <='0';
-			--BYTE_CASE <='0';
-			
-			--PC_LOAD_EN <='1';
-			
-			--MEM_WREN <='0';
-			
-			--ALU_BIN_SEL <='1'; -- immediate
-			--ALU_FUNC <="0000"; --add
-		
-		--when "110011" =>	-- ori
-			--RF_B_SEL <= '1';
-			--IMM_EXT <='0';
-			--RF_WRDATA_SEL <='0'; --alu
-			--REG_WRITE_EN <='1';
-			--imm_Shift <='0';
-			--BYTE_CASE <='0';
-			
-			--PC_LOAD_EN <='1';
-			
-			--MEM_WREN <='0';
-			
-			--ALU_BIN_SEL <='1'; -- immediate
-			--ALU_FUNC <="0011"; --OR
-			
-		--when "011111" =>	-- sw immediate format
-			--RF_B_SEL <= '1';
-			--IMM_EXT <='1';
-			--RF_WRDATA_SEL <='0'; --we dont care
-			--REG_WRITE_EN <='0'; -- we dont write any reg 
-			--imm_Shift <='0'; -- PENDING
-			--BYTE_CASE <='0';
-			
-			--PC_LOAD_EN <='1'; 
-			
-			--MEM_WREN <='1'; -- WE WRITE IN OUR MEMORY
-			
-			--ALU_BIN_SEL <='1'; -- immediate 
-			--ALU_FUNC <="0000"; --add
-		
-		--when "001111" =>	-- lw immediate format
-			--RF_B_SEL <= '1';
-			--IMM_EXT <='1';
-			--RF_WRDATA_SEL <='1'; -- memory data
-			--REG_WRITE_EN <='1'; -- we  write  reg 
-			--imm_Shift <='0'; -- PENDING
-			--BYTE_CASE <='0';
-			
---			PC_LOAD_EN <='1'; 
---			
---			MEM_WREN <='0'; -- WE dont WRITE IN OUR MEMORY
---			
---			ALU_BIN_SEL <='1'; -- immediate 
---			ALU_FUNC <="0000"; --add
---			
---		when "000011" =>	-- lb immediate format
---			RF_B_SEL <= '1';
---			IMM_EXT <='1';
---			RF_WRDATA_SEL <='1'; -- memory data
---			REG_WRITE_EN <='1'; -- we  write  reg 
---			imm_Shift <='0'; -- PENDING
---			BYTE_CASE <='1'; -- WE NEED THE BYTE 
---			
---			PC_LOAD_EN <='1'; 
---			
---			MEM_WREN <='0'; -- WE dont WRITE IN OUR MEMORY
---			
---			ALU_BIN_SEL <='1'; -- immediate 
---			ALU_FUNC <="0000"; --add
---			
---		
---		when others =>
---		
---			RF_B_SEL <= '1';
---			IMM_EXT <='1';
---			RF_WRDATA_SEL <='0'; 
---			REG_WRITE_EN <='0'; 
---			imm_Shift <='0'; 
---			BYTE_CASE <='0';
---			
---			PC_LOAD_EN <='0'; 
---			
---			MEM_WREN <='0'; 
---			
---			ALU_BIN_SEL <='0'; 
---			ALU_FUNC <="0000"; 
---	end case;		
---end process;
+end process;
+
 
 end Behavioral;
 

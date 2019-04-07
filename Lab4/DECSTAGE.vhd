@@ -96,11 +96,20 @@ component MUX64to32 is
 			Out_instruct: out std_logic_vector (31 downto 0));
 end component;
 
+--Added byte case
+COMPONENT ByteCase is
+    PORT(
+         InputByte : IN  std_logic_vector(31 downto 0);
+         OutputByte : OUT  std_logic_vector(31 downto 0);
+         Selector : IN  std_logic
+        );
+    END COMPONENT;
 
 
 
 signal MuxToRF: std_logic_vector (4 downto 0);
 signal MuxToWrData: std_logic_vector (31 downto 0);
+signal MuxFinToWrData: std_logic_vector (31 downto 0);
 signal Ext32: std_logic_vector (31 downto 0);
 signal opCodeDummy: std_logic;
 signal byte_signal:  std_logic;
@@ -127,7 +136,8 @@ MUX_ALU_MEM: MUX64to32 PORT MAP (
 										 Instruct0 => ALU_out,
 										 Instruct1 => MEM_out,
 										 sel => RF_WrData_sel,
-										 Out_instruct => MuxToWrData 
+										 Out_instruct => MuxToWrData
+										--Out_instruct => InputByte 
 										);
 RF: register_file port map (
 									   Ard1 => Instr(25 downto 21),
@@ -135,7 +145,7 @@ RF: register_file port map (
 										Awr => Instr(20 downto 16),
 										Dout1 => RF_A,
 										Dout2 => RF_B,
-										Din => MuxToWrData,
+										Din => MuxFinToWrData,
 										WrEN => RF_WrEn,
 										clk => clk
 									 );
@@ -145,6 +155,13 @@ SHIFT: shiftBox port map(
 									OpCode => Immed_Sh,
 									imm32_out => Immed
 								);
+								
+BYTE : ByteCase port map(
+         InputByte => MuxToWrData,
+         OutputByte => MuxFinToWrData,
+         Selector => byte_case
+        );
+   
 
 --process(byte_case)
 --begin

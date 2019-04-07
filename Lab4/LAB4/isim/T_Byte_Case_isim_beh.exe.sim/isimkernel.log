@@ -1,0 +1,29 @@
+Command line:
+   T_Byte_Case_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  52432
+
+Mon Apr 08 02:00:57 2019
+
+
+ Elaboration Time: 0.03125 sec
+
+ Current Memory Usage: 5331.39 Meg
+
+ Total Signals          : 6
+ Total Nets             : 65
+ Total Signal Drivers   : 3
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 2
+ Total Traceable Variables  : 8
+ Total Scalar Nets and Variables : 425
+Total Line Count : 10
+
+ Total Simulation Time: 0.09375 sec
+
+ Current Memory Usage: 5331.39 Meg
+
+Mon Apr 08 02:01:16 2019
+

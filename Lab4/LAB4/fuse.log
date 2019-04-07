@@ -21,6 +21,7 @@ Parsing VHDL file "D:/TUC_PROJECT/TUC_Computer_Architecture/Lab4/LAB4/../PC.vhd"
 Parsing VHDL file "D:/TUC_PROJECT/TUC_Computer_Architecture/Lab4/LAB4/../MUX64to32.vhd" into library work
 Parsing VHDL file "D:/TUC_PROJECT/TUC_Computer_Architecture/Lab4/LAB4/../MUX2TO1.vhd" into library work
 Parsing VHDL file "D:/TUC_PROJECT/TUC_Computer_Architecture/Lab4/LAB4/../MUX10to5.vhd" into library work
+Parsing VHDL file "D:/TUC_PROJECT/TUC_Computer_Architecture/Lab4/LAB4/ByteCase.vhd" into library work
 Parsing VHDL file "D:/TUC_PROJECT/TUC_Computer_Architecture/Lab4/LAB4/../Extender.vhd" into library work
 Parsing VHDL file "D:/TUC_PROJECT/TUC_Computer_Architecture/Lab4/LAB4/../ALU.vhd" into library work
 Parsing VHDL file "D:/TUC_PROJECT/TUC_Computer_Architecture/Lab4/LAB4/../RAM.vhd" into library work
@@ -51,6 +52,7 @@ Compiling architecture mux of entity multiplexer32to1 [multiplexer32to1_default]
 Compiling architecture behavior of entity regist [regist_default]
 Compiling architecture behavioral of entity register_file [register_file_default]
 Compiling architecture behavioral of entity shiftBox [shiftbox_default]
+Compiling architecture behavioral of entity ByteCase [bytecase_default]
 Compiling architecture behavioral of entity DECSTAGE [decstage_default]
 Compiling architecture behavioral of entity MUX2TO1 [mux2to1_default]
 Compiling architecture behavioral of entity Addition32BIT [addition32bit_default]
@@ -72,8 +74,8 @@ Compiling architecture behavioral of entity DATAPATH [datapath_default]
 Compiling architecture behavioral of entity TOP_LEVEL [top_level_default]
 Compiling architecture behavior of entity top_level_test
 Time Resolution for simulation is 1ps.
-Waiting for 13 sub-compilation(s) to finish...
-Compiled 65 VHDL Units
+Waiting for 16 sub-compilation(s) to finish...
+Compiled 67 VHDL Units
 Built simulation executable D:/TUC_PROJECT/TUC_Computer_Architecture/Lab4/LAB4/TOP_LEVEL_TEST_isim_beh.exe
-Fuse Memory Usage: 50192 KB
-Fuse CPU Usage: 1108 ms
+Fuse Memory Usage: 50896 KB
+Fuse CPU Usage: 1280 ms
