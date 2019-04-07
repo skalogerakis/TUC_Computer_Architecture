@@ -35,6 +35,7 @@ entity DATAPATH is -- EINAI TA SHMATA TOY CONTROL
 port (
 				CLK: in std_logic;  
 				OPCODE: out std_logic_vector(5 downto 0);
+				ALU_IN :out std_logic_vector(5 downto 0);
 				
 				 -- CONTROL TO RF 
 				RF_B_SEL: in std_logic;
@@ -209,6 +210,7 @@ BR_CHECK: BRANCH_BOX Port map(
 						
 DATA_ADDRESS <= ALU_DATA(12 DOWNTO 2) + "10000000000";
 OPCODE <= INSTRUCTION(31 downto 26) ;
+ALU_IN <= INSTRUCTION(5 downto 0) ;
 
 
 end Behavioral;

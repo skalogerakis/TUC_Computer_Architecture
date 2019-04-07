@@ -64,6 +64,6 @@ architecture syn of RAM is
                 end if;
             end if;
         end process;
-        data_dout <= RAM(conv_integer(data_addr)) after 10ns;
+			data_dout <= RAM(conv_integer(data_addr)) after 10ns;
         inst_dout <= RAM(conv_integer(inst_addr)) after 10ns;
 end syn;

@@ -52,7 +52,7 @@ ARCHITECTURE behavior OF TOP_LEVEL_TEST IS
    signal RESET : std_logic := '0';
 
    -- Clock period definitions
-   constant CLK_period : time := 100 ns;
+   constant CLK_period : time := 20 ns;
  
 BEGIN
  
@@ -61,7 +61,7 @@ BEGIN
           CLK => CLK,
           RESET => RESET
         );
-
+		  
    -- Clock process definitions
    CLK_process :process
    begin

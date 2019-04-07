@@ -47,6 +47,7 @@ component DATAPATH is
 port (
 				CLK: in std_logic;  
 				OPCODE: out std_logic_vector(5 downto 0);
+				ALU_IN: out std_logic_vector(5 downto 0);
 				
 				 -- CONTROL TO RF 
 				RF_B_SEL: in std_logic;
@@ -73,11 +74,13 @@ port (
 
 end component;
 
-
 component CONTROL is
 	PORT(
-				
+				CLK: in std_logic;
+				RESET: in std_logic;
 				OPCODE: in std_logic_vector(5 downto 0);
+				ALU_IN : in std_logic_vector(5 downto 0);
+				
 				 
 				 -- CONTROL TO RF 
 				RF_B_SEL: out std_logic;
@@ -101,6 +104,7 @@ component CONTROL is
 end component;
 
 signal OPCODE_SIGNAL:STD_LOGIC_VECTOR(5 DOWNTO 0);
+signal ALU_SIGNAL : std_logic_vector(5 downto 0);
 signal RF_B_SEL_SIGNAL:std_logic;
 signal IMM_EXT_SIGNAL:std_logic;
 signal RF_WRDATA_SEL_SIGNAL:std_logic;
@@ -119,8 +123,10 @@ signal BYTE_CASE_SIGNAL: std_logic;
 begin
 
 CONTROL1: CONTROL port map (
+										CLK => CLK,
+										RESET=>RESET,
 										OPCODE => OPCODE_SIGNAL,
-				 
+										ALU_IN=> ALU_SIGNAL,
 											 -- CONTROL TO RF 
 										RF_B_SEL=> RF_B_SEL_SIGNAL,
 										IMM_EXT => IMM_EXT_SIGNAL,
@@ -144,6 +150,7 @@ CONTROL1: CONTROL port map (
 DATAPATH1: DATAPATH port map(
 										CLK => CLK,
 										OPCODE => OPCODE_SIGNAL,
+										ALU_IN => ALU_SIGNAL,
 										RESET=>RESET,
 										
 											 -- CONTROL TO RF 
