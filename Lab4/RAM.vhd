@@ -53,7 +53,7 @@ architecture syn of RAM is
     end function;
 
 
-    signal RAM: ram_type := InitRamFromFile("ram.data");
+    signal RAM: ram_type := InitRamFromFile("ramT.data");
     
     begin
         process (clk)

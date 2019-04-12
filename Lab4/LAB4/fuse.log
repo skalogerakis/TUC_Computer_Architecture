@@ -74,8 +74,8 @@ Compiling architecture behavioral of entity DATAPATH [datapath_default]
 Compiling architecture behavioral of entity TOP_LEVEL [top_level_default]
 Compiling architecture behavior of entity top_level_test
 Time Resolution for simulation is 1ps.
-Waiting for 16 sub-compilation(s) to finish...
+Waiting for 9 sub-compilation(s) to finish...
 Compiled 67 VHDL Units
 Built simulation executable D:/TUC_PROJECT/TUC_Computer_Architecture/Lab4/LAB4/TOP_LEVEL_TEST_isim_beh.exe
-Fuse Memory Usage: 50896 KB
-Fuse CPU Usage: 1280 ms
+Fuse Memory Usage: 51740 KB
+Fuse CPU Usage: 1062 ms
