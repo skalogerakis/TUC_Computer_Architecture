@@ -56,6 +56,8 @@ port (
 				-- CONTROL TO ALU 
 				ALU_BIN_SEL: in std_logic;
 				FETCH_EN : in std_logic;
+				IDEX_EN: in std_logic;
+				MEMWB_EN: in std_logic;
 				ALU_FUNC: in std_logic_vector(3 downto 0)
 				
 				

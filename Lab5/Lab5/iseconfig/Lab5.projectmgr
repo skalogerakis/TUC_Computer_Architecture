@@ -78,18 +78,19 @@
    <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/TOP_LEVEL_TEST - behavior D:|TUC_PROJECT|TUC_Computer_Architecture|Lab5|TOP_LEVEL_TEST.vhd/uut - TOP_LEVEL - Behavioral/DATAPATH1 - DATAPATH - Behavioral/DECODE - DECSTAGE - Behavioral</ClosedNode>
          <ClosedNode>/TOP_LEVEL_TEST - behavior D:|TUC_PROJECT|TUC_Computer_Architecture|Lab5|TOP_LEVEL_TEST.vhd/uut - TOP_LEVEL - Behavioral/DATAPATH1 - DATAPATH - Behavioral/DECODE - DECSTAGE - Behavioral/RF - register_file - Behavioral</ClosedNode>
          <ClosedNode>/TOP_LEVEL_TEST - behavior D:|TUC_PROJECT|TUC_Computer_Architecture|Lab5|TOP_LEVEL_TEST.vhd/uut - TOP_LEVEL - Behavioral/DATAPATH1 - DATAPATH - Behavioral/EX - ALUSTAGE - Behavioral</ClosedNode>
          <ClosedNode>/TOP_LEVEL_TEST - behavior D:|TUC_PROJECT|TUC_Computer_Architecture|Lab5|TOP_LEVEL_TEST.vhd/uut - TOP_LEVEL - Behavioral/DATAPATH1 - DATAPATH - Behavioral/INSTRUCTION_FETCH - IFSTAGE - Behavioral</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>CONTROL1 - CONTROL - Behavioral (D:/TUC_PROJECT/TUC_Computer_Architecture/Lab5/CONTROL.vhd)</SelectedItem>
+         <SelectedItem>RAM1 - RAM - syn (D:/TUC_PROJECT/TUC_Computer_Architecture/Lab5/RAM.vhd)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >2</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001d3000000020000000000000000000000000200000064ffffffff000000810000000300000002000001d30000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001c0000000020000000000000000000000000200000064ffffffff000000810000000300000002000001c00000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>CONTROL1 - CONTROL - Behavioral (D:/TUC_PROJECT/TUC_Computer_Architecture/Lab5/CONTROL.vhd)</CurrentItem>
+      <CurrentItem>RAM1 - RAM - syn (D:/TUC_PROJECT/TUC_Computer_Architecture/Lab5/RAM.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>
