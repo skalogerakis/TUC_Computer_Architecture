@@ -1,0 +1,29 @@
+Command line:
+   T_AND32BIT_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  64353
+
+Wed Feb 27 01:24:47 2019
+
+
+ Elaboration Time: 0.046875 sec
+
+ Current Memory Usage: 5331.4 Meg
+
+ Total Signals          : 6
+ Total Nets             : 96
+ Total Signal Drivers   : 3
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 2
+ Total Traceable Variables  : 8
+ Total Scalar Nets and Variables : 456
+Total Line Count : 20
+
+ Total Simulation Time: 0.0625 sec
+
+ Current Memory Usage: 5331.4 Meg
+
+Wed Feb 27 01:24:51 2019
+

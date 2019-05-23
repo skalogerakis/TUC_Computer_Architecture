@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/EKALANTAJEI/Documents/xilinx/lab3_test/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/EKALANTAJEI/Documents/xilinx/lab3_test/xst"
+elaborate
+-ifn TOP_LEVEL_TEST.prj
+-ifmt mixed

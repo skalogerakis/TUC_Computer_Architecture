@@ -44,9 +44,9 @@ begin
 	process(sel,Instruct0,Instruct1)
 	begin
 				if (sel='0') then
-					Out_instruct <= Instruct0 after 5 ns;
+					Out_instruct <= Instruct0;
 				elsif (sel='1') then
-					Out_instruct <= Instruct1 after 5 ns;
+					Out_instruct <= Instruct1;
 					
 				end if;
 	end process ;

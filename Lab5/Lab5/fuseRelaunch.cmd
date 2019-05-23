@@ -1,1 +1,0 @@
--intstyle "ise" -incremental -o "D:/TUC_PROJECT/TUC_Computer_Architecture/Lab5/Lab5/TOP_LEVEL_TEST_isim_beh.exe" -prj "D:/TUC_PROJECT/TUC_Computer_Architecture/Lab5/Lab5/TOP_LEVEL_TEST_beh.prj" "work.TOP_LEVEL_TEST" 

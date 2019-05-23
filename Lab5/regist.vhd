@@ -49,7 +49,7 @@ BEGIN
 			BEGIN
 		   
 			WAIT UNTIL Clock'EVENT AND Clock = '1' ;
-			IF WE='1' THEN DataOut <= DataIn after 5 ns ;
+			IF WE='1' THEN DataOut <= DataIn after 5 ns  ;
 			END IF ;
 			
    END PROCESS ;

@@ -1,0 +1,5 @@
+work	"decoder2x4.vhd"
+work	"decoder3x8.vhd"
+work	"decoder5x8.vhd"
+work	"multiplexer32to1.vhd"
+work	"register_file.vhd"

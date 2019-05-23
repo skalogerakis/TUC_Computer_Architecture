@@ -43,147 +43,141 @@ end TOP_LEVEL;
 
 architecture Behavioral of TOP_LEVEL is
 
-component DATAPATH is 
+component DATAPATH is -- EINAI TA SHMATA TOY CONTROL
 port (
+				
+				 --REGISTER ENABLE FROM CONTROL
+				
 				CLK: in std_logic;  
-				OPCODE: out std_logic_vector(5 downto 0);
-				ALU_IN: out std_logic_vector(5 downto 0);
+				opcode: out std_logic_vector(5 downto 0);
+				func: out std_logic_vector(4 downto 0);
 				
 				 -- CONTROL TO RF 
-				RF_B_SEL: in std_logic;
-				IMM_EXT: in std_logic;
-				RF_WRDATA_SEL: in std_logic;
-				REG_WRITE_EN: in std_logic;
+				RegDst: in std_logic;
+				immExt: in std_logic;
+				MemtoReg: in std_logic;
+				RegWrite: in std_logic;
 				imm_Shift: in std_logic;
-				BYTE_CASE: in std_logic;
-				FETCH_EN : in std_logic;
-				IDEX_EN: in std_logic;
-				MEMWB_EN: in std_logic;
+				BYTE_CASE: in std_logic; -- dead
+				
 				--nPC_sel: in std_logic_vector(5 downto 0); 
+				
 				-- CONTROL TO IF 
-				PC_LOAD_EN: in std_logic;
+				--PC_LOAD_EN: in std_logic; 
 				RESET: in std_logic;
 				
+				
 			   -- CONTROL TO MEMORY 
-				MEM_WREN: in std_logic;
+				MemWrite: in std_logic;
 				
 				-- CONTROL TO ALU 
-				ALU_BIN_SEL: in std_logic; 
-				ALU_FUNC: in std_logic_vector(3 downto 0)
+				AluSrc: in std_logic; 
+				ALUControl: in std_logic_vector(3 downto 0)
 				
 				
 		);
 
 end component;
 
-component CONTROL is
-	PORT(
-				CLK: in std_logic;
-				RESET: in std_logic;
-				OPCODE: in std_logic_vector(5 downto 0);
-				ALU_IN : in std_logic_vector(5 downto 0);
+
+component CONTROL 
+	PORT (
 				
-				 
-				 -- CONTROL TO RF 
-				RF_B_SEL: out std_logic;
-				IMM_EXT: out std_logic;
-				RF_WRDATA_SEL: out std_logic;
-				REG_WRITE_EN: out std_logic;
+				opcode: in std_logic_vector(5 downto 0);
+				func: in std_logic_vector(4 downto 0);
+				
+				RegDst: out std_logic;
+				immExt: out std_logic;
+				MemtoReg: out std_logic;
+				RegWrite: out std_logic;
 				imm_Shift: out std_logic;
-				BYTE_CASE: out std_logic;
-				FETCH_EN : out std_logic;
-				IDEX_EN: out std_logic;
-				MEMWB_EN: out std_logic;
+				BYTE_CASE: out std_logic; -- dead
 				
-				--nPC_sel: in std_logic_vector(5 downto 0); 
+				--nPC_sel: out std_logic_vector(5 downto 0); 
+				
 				-- CONTROL TO IF 
-				PC_LOAD_EN: out std_logic;
+				--PC_LOAD_EN: out std_logic; 
+				RESET: in std_logic;
+				
 				
 			   -- CONTROL TO MEMORY 
-				MEM_WREN: out std_logic;
+				MemWrite: out std_logic;
 				
 				-- CONTROL TO ALU 
-				ALU_BIN_SEL: out std_logic; 
-				ALU_FUNC: out std_logic_vector(3 downto 0)
-			);	
+				AluSrc: out std_logic; 
+				ALUControl: out std_logic_vector(3 downto 0)			
+				);	
 end component;
 
-signal OPCODE_SIGNAL:STD_LOGIC_VECTOR(5 DOWNTO 0);
-signal ALU_SIGNAL : std_logic_vector(5 downto 0);
-signal RF_B_SEL_SIGNAL:std_logic;
-signal IMM_EXT_SIGNAL:std_logic;
-signal RF_WRDATA_SEL_SIGNAL:std_logic;
-signal REG_WRITE_EN_SIGNAL:std_logic;
-signal imm_Shift_SIGNAL:std_logic;
-
-signal PC_LOAD_EN_SIGNAL:std_logic;
-
-signal MEM_WREN_SIGNAL:std_logic;
-
-signal ALU_BIN_SEL_SIGNAL:std_logic;
-signal ALU_FUNC_SIGNAL:std_logic_vector(3 downto 0);
-signal BYTE_CASE_SIGNAL: std_logic;
-signal FETCH_EN_SIGNAL: std_logic;
-signal IDEX_EN_SIGNAL: std_logic;
-signal MEMWB_EN_SIGNAL: std_logic;
-
+SIGNAL REGDST_SIGNAL,IMMEXT_SIGNAL,MEMTOREG_SIGNAL,REGWRITE_SIGNAL: STD_LOGIC;
+SIGNAL IMMSHIFT_SIGNAL,BYTECASE_SIGNAL,MEMWRITE_SIGNAL,ALUSRC_SIGNAL: STD_LOGIC;
+SIGNAL ALUCONTROL_SIGNAL: STD_LOGIC_VECTOR(3 DOWNTO 0);
+signal OPCODE_SIGNAL: std_logic_vector(5 downto 0);
+signal FUNC_SIGNAL: std_logic_vector(4 downto 0);
 
 begin
 
-CONTROL1: CONTROL port map (
-										CLK => CLK,
-										RESET=>RESET,
-										OPCODE => OPCODE_SIGNAL,
-										ALU_IN=> ALU_SIGNAL,
-											 -- CONTROL TO RF 
-										RF_B_SEL=> RF_B_SEL_SIGNAL,
-										IMM_EXT => IMM_EXT_SIGNAL,
-										RF_WRDATA_SEL => RF_WRDATA_SEL_SIGNAL,
-										REG_WRITE_EN => REG_WRITE_EN_SIGNAL,
-										imm_Shift => imm_Shift_SIGNAL,	
-										BYTE_CASE => BYTE_CASE_SIGNAL,
-										FETCH_EN => FETCH_EN_SIGNAL,
-										IDEX_EN => IDEX_EN_SIGNAL,
-										MEMWB_EN => MEMWB_EN_SIGNAL,
-											-- CONTROL TO IF 
-										PC_LOAD_EN => PC_LOAD_EN_SIGNAL,
-											
-											-- CONTROL TO MEMORY 
-										MEM_WREN => MEM_WREN_SIGNAL,
-											
-											-- CONTROL TO ALU 
-										ALU_BIN_SEL => ALU_BIN_SEL_SIGNAL,
-										ALU_FUNC => ALU_FUNC_SIGNAL
-										
-									);
-								
-DATAPATH1: DATAPATH port map(
-										CLK => CLK,
-										OPCODE => OPCODE_SIGNAL,
-										ALU_IN => ALU_SIGNAL,
-										RESET=>RESET,
-										
-											 -- CONTROL TO RF 
-										RF_B_SEL=> RF_B_SEL_SIGNAL,
-										IMM_EXT => IMM_EXT_SIGNAL,
-										RF_WRDATA_SEL => RF_WRDATA_SEL_SIGNAL,
-										REG_WRITE_EN => REG_WRITE_EN_SIGNAL,
-										imm_Shift => imm_Shift_SIGNAL,	
-										BYTE_CASE => BYTE_CASE_SIGNAL,
-										FETCH_EN => FETCH_EN_SIGNAL,
-										IDEX_EN => IDEX_EN_SIGNAL,
-										MEMWB_EN => MEMWB_EN_SIGNAL,
-											-- CONTROL TO IF 
-										PC_LOAD_EN => PC_LOAD_EN_SIGNAL,
-											
-											-- CONTROL TO MEMORY 
-										MEM_WREN => MEM_WREN_SIGNAL,
-											
-											-- CONTROL TO ALU 
-										ALU_BIN_SEL => ALU_BIN_SEL_SIGNAL,
-										ALU_FUNC => ALU_FUNC_SIGNAL
-		
-									 );
+CONTROL1:  CONTROL 
+	PORT MAP(
+				
+				opcode => OPCODE_SIGNAL,
+				func => FUNC_SIGNAL,
+				
+				RegDst => REGDST_SIGNAL,
+				immExt => IMMEXT_SIGNAL,
+				MemtoReg => MEMTOREG_SIGNAL,
+				RegWrite =>REGWRITE_SIGNAL,
+				imm_Shift => IMMSHIFT_SIGNAL,
+				BYTE_CASE => BYTECASE_SIGNAL,
+				
+				--nPC_sel: out std_logic_vector(5 downto 0); 
+				
+				-- CONTROL TO IF 
+				--PC_LOAD_EN: out std_logic; 
+				RESET => RESET,
+				
+				
+			   -- CONTROL TO MEMORY 
+				MemWrite => MEMWRITE_SIGNAL,
+				
+				-- CONTROL TO ALU 
+				AluSrc => ALUSRC_SIGNAL,
+				ALUControl => ALUCONTROL_SIGNAL	
+				);	
+				
+DATAPATH1:  DATAPATH  -- EINAI TA SHMATA TOY CONTROL
+port  map(
+				
+				 --REGISTER ENABLE FROM CONTROL
+				
+				CLK => CLK, 
+				opcode=> OPCODE_SIGNAL,
+				func=> FUNC_SIGNAL,
+				
+				 -- CONTROL TO RF 
+				RegDst=>REGDST_SIGNAL,
+				immExt=>IMMEXT_SIGNAL,
+				MemtoReg=>MEMTOREG_SIGNAL,
+				RegWrite=>REGWRITE_SIGNAL,
+				imm_Shift=>IMMSHIFT_SIGNAL,
+				BYTE_CASE=> BYTECASE_SIGNAL,
+				
+				--nPC_sel: in std_logic_vector(5 downto 0); 
+				
+				-- CONTROL TO IF 
+				--PC_LOAD_EN: in std_logic; 
+				RESET=> RESET,
+				
+				
+			   -- CONTROL TO MEMORY 
+				MemWrite=> MEMWRITE_SIGNAL,
+				
+				-- CONTROL TO ALU 
+				AluSrc => ALUSRC_SIGNAL,
+				ALUControl => ALUCONTROL_SIGNAL
+				
+				
+		);
 
 end Behavioral;
 

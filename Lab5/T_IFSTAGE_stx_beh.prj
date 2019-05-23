@@ -1,0 +1,4 @@
+vhdl isim_temp "PC.vhd"
+vhdl isim_temp "MUX2TO1.vhd"
+vhdl isim_temp "IFSTAGE.vhd"
+vhdl isim_temp "T_IFSTAGE.vhd"

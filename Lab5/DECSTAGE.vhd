@@ -34,13 +34,12 @@ entity DECSTAGE is
 			 RF_WrEn : in std_logic;
 			 ALU_out : in STD_LOGIC_VECTOR(31 downto 0);
 			 MEM_out : in STD_LOGIC_VECTOR(31 downto 0);
+			 Write_reg: in std_logic_vector(4 downto 0);	
 			 RF_WrData_sel : in std_logic;
 			 RF_B_sel : in std_logic;
-			 Immed_Sh: in std_logic;
 			 Immed_Ext: in std_logic;
 			 clk : in std_logic;
 			 Immed : out STD_LOGIC_VECTOR(31 downto 0);
-			 byte_case: in std_logic; ---------------------------!!!!!!!!!!!!!!!!!!!!!!1
 			 RF_A : out STD_LOGIC_VECTOR(31 downto 0);
 			 RF_B : out STD_LOGIC_VECTOR(31 downto 0));
 			 
@@ -79,6 +78,8 @@ component shiftBox is
 			);
 end component;
 
+
+
 component MUX10to5 is
 	port (
 				Instruct0: in std_logic_vector (4 downto 0);
@@ -96,23 +97,13 @@ component MUX64to32 is
 			Out_instruct: out std_logic_vector (31 downto 0));
 end component;
 
---Added byte case
-COMPONENT ByteCase is
-    PORT(
-         InputByte : IN  std_logic_vector(31 downto 0);
-         OutputByte : OUT  std_logic_vector(31 downto 0);
-         Selector : IN  std_logic
-        );
-    END COMPONENT;
 
 
 
 signal MuxToRF: std_logic_vector (4 downto 0);
 signal MuxToWrData: std_logic_vector (31 downto 0);
-signal MuxFinToWrData: std_logic_vector (31 downto 0);
 signal Ext32: std_logic_vector (31 downto 0);
 signal opCodeDummy: std_logic;
-signal byte_signal:  std_logic;
 
 --+====================================================
 
@@ -124,7 +115,7 @@ EXTEND: extender port map (
 										imm32_out => Ext32
 										);
 										
-
+--TO PETAME EKTOS
 MUX_INSTR:  MUX10to5  port map (
 								           Instruct0 => Instr(15 downto 11),
 											  Instruct1 => Instr(20 downto 16),
@@ -136,43 +127,24 @@ MUX_ALU_MEM: MUX64to32 PORT MAP (
 										 Instruct0 => ALU_out,
 										 Instruct1 => MEM_out,
 										 sel => RF_WrData_sel,
-										 Out_instruct => MuxToWrData
-										--Out_instruct => InputByte 
+										 Out_instruct => MuxToWrData 
 										);
 RF: register_file port map (
 									   Ard1 => Instr(25 downto 21),
 										Ard2 => MuxToRF,
-										Awr => Instr(20 downto 16),
+										Awr => Write_reg, -- CRITICAL
 										Dout1 => RF_A,
 										Dout2 => RF_B,
-										Din => MuxFinToWrData,
+										Din => MuxToWrData,
 										WrEN => RF_WrEn,
 										clk => clk
 									 );
 									 
 SHIFT: shiftBox port map(
 									imm32_in => Ext32,
-									OpCode => Immed_Sh,
+									OpCode => opCodeDummy,
 									imm32_out => Immed
 								);
-								
-BYTE : ByteCase port map(
-         InputByte => MuxToWrData,
-         OutputByte => MuxFinToWrData,
-         Selector => byte_case
-        );
-   
-
---process(byte_case)
---begin
---
---if byte_case='1' then MuxToWrData <= "000000000000000000000000" & MuxToWrData(7 downto 0);
---
---else MuxToWrData <= MuxToWrData;
---
---end if;
---
---end process;
 
 end Behavioral;
 

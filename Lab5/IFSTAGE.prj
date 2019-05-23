@@ -1,0 +1,3 @@
+vhdl work "PC.vhd"
+vhdl work "MUX2TO1.vhd"
+vhdl work "IFSTAGE.vhd"

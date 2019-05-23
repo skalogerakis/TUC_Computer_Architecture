@@ -1,0 +1,3 @@
+xst -intstyle ise -ifn "D:/TUC_PROJECT/TUC_Computer_Architecture/Lab1/ALU.xst" -ofn "D:/TUC_PROJECT/TUC_Computer_Architecture/Lab1/ALU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-cp132-5 ALU.ngc ALU.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o ALU_map.ncd ALU.ngd ALU.pcf 

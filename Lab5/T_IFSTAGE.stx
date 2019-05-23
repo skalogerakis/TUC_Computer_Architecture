@@ -1,0 +1,48 @@
+Release 13.4 - xst O.87xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/Users/EKALANTAJEI/Documents/xilinx/lab3_test/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Parameter xsthdpdir set to C:/Users/EKALANTAJEI/Documents/xilinx/lab3_test/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/EKALANTAJEI/Documents/xilinx/lab3_test/MUX2TO1.vhd" in Library work.
+Architecture behavioral of Entity mux2to1 is up to date.
+Compiling vhdl file "C:/Users/EKALANTAJEI/Documents/xilinx/lab3_test/PC.vhd" in Library work.
+Architecture behavioral of Entity pc is up to date.
+Compiling vhdl file "C:/Users/EKALANTAJEI/Documents/xilinx/lab3_test/IFSTAGE.vhd" in Library work.
+Entity <ifstage> compiled.
+Entity <ifstage> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/Users/EKALANTAJEI/Documents/xilinx/lab3_test/T_IFSTAGE.vhd" in Library work.
+Entity <T_IFSTAGE> compiled.
+ERROR:HDLParsers:1015 - "C:/Users/EKALANTAJEI/Documents/xilinx/lab3_test/T_IFSTAGE.vhd" Line 83. Wait for statement unsupported.
+ERROR:HDLParsers:1015 - "C:/Users/EKALANTAJEI/Documents/xilinx/lab3_test/T_IFSTAGE.vhd" Line 85. Wait for statement unsupported.
+ERROR:HDLParsers:1015 - "C:/Users/EKALANTAJEI/Documents/xilinx/lab3_test/T_IFSTAGE.vhd" Line 93. Wait for statement unsupported.
+ERROR:HDLParsers:1015 - "C:/Users/EKALANTAJEI/Documents/xilinx/lab3_test/T_IFSTAGE.vhd" Line 95. Wait for statement unsupported.
+ERROR:HDLParsers:1015 - "C:/Users/EKALANTAJEI/Documents/xilinx/lab3_test/T_IFSTAGE.vhd" Line 104. Wait for statement unsupported.
+ERROR:HDLParsers:1015 - "C:/Users/EKALANTAJEI/Documents/xilinx/lab3_test/T_IFSTAGE.vhd" Line 111. Wait for statement unsupported.
+ERROR:HDLParsers:1015 - "C:/Users/EKALANTAJEI/Documents/xilinx/lab3_test/T_IFSTAGE.vhd" Line 118. Wait for statement unsupported.
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> 
+
+Total memory usage is 4495848 kilobytes
+
+Number of errors   :    7 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/EKALANTAJEI/Documents/xilinx/lab5/lab5/lab5/lab3_test/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/EKALANTAJEI/Documents/xilinx/lab5/lab5/lab5/lab3_test/xst"
+elaborate
+-ifn Forward_Unit.prj
+-ifmt mixed

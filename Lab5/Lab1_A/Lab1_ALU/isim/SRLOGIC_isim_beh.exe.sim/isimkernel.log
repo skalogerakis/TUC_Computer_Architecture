@@ -1,0 +1,29 @@
+Command line:
+   SRLOGIC_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  64324
+
+Wed Feb 27 01:21:53 2019
+
+
+ Elaboration Time: 0.0625 sec
+
+ Current Memory Usage: 5330.83 Meg
+
+ Total Signals          : 2
+ Total Nets             : 64
+ Total Signal Drivers   : 1
+ Total Blocks           : 2
+ Total Primitive Blocks : 2
+ Total Processes        : 1
+ Total Traceable Variables  : 8
+ Total Scalar Nets and Variables : 424
+Total Line Count : 1
+
+ Total Simulation Time: 0.0625 sec
+
+ Current Memory Usage: 5330.83 Meg
+
+Wed Feb 27 01:21:57 2019
+

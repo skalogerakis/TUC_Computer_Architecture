@@ -51,9 +51,8 @@ architecture syn of RAM is
         end loop;
     return ram;
     end function;
-
-
-    signal RAM: ram_type := InitRamFromFile("ramF.data");
+ 
+    signal RAM: ram_type := InitRamFromFile("lab5_forward.data");
     
     begin
         process (clk)
@@ -64,6 +63,6 @@ architecture syn of RAM is
                 end if;
             end if;
         end process;
-			data_dout <= RAM(conv_integer(data_addr)) after 10ns;
-        inst_dout <= RAM(conv_integer(inst_addr)) after 10ns;
+        data_dout <= RAM(conv_integer(data_addr)) after 10 ns;
+        inst_dout <= RAM(conv_integer(inst_addr)) after 10 ns;
 end syn;

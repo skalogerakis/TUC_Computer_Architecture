@@ -46,13 +46,13 @@ begin
 	PROCESS
 		BEGIN
 		
-		WAIT UNTIL clk'EVENT AND clk = '1' ;
+		WAIT UNTIL rising_edge(clk) AND clk = '1' ;
 		
-		IF wenalbe='1' THEN tOut <= DataIn;
+		IF wenalbe='1' THEN DataOut <= DataIn;
 		END IF ;
-		IF reset = '1' then tOut <="00000000000000000000000000000000";
+		IF reset = '1' then DataOut<="00000000000000000000000000000000";
 		END IF;
-		DataOut <= tOut;
+		
 			
 	END PROCESS;
 

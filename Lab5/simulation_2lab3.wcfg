@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/EKALANTAJEI/Documents/xilinx/lab3_test/DATAPATH_TEST_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="datapath_test" />
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_signed" />
+            <top_module name="std_logic_textio" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="textio" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="15" />
+   <wvobject fp_name="/datapath_test/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/datapath_test/rf_b_sel" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rf_b_sel</obj_property>
+      <obj_property name="ObjectShortName">rf_b_sel</obj_property>
+   </wvobject>
+   <wvobject fp_name="/datapath_test/imm_ext" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">imm_ext</obj_property>
+      <obj_property name="ObjectShortName">imm_ext</obj_property>
+   </wvobject>
+   <wvobject fp_name="/datapath_test/rf_wrdata_sel" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rf_wrdata_sel</obj_property>
+      <obj_property name="ObjectShortName">rf_wrdata_sel</obj_property>
+   </wvobject>
+   <wvobject fp_name="/datapath_test/reg_write_en" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reg_write_en</obj_property>
+      <obj_property name="ObjectShortName">reg_write_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/datapath_test/imm_shift" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">imm_shift</obj_property>
+      <obj_property name="ObjectShortName">imm_shift</obj_property>
+   </wvobject>
+   <wvobject fp_name="/datapath_test/byte_case" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">byte_case</obj_property>
+      <obj_property name="ObjectShortName">byte_case</obj_property>
+   </wvobject>
+   <wvobject fp_name="/datapath_test/pc_load_en" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">pc_load_en</obj_property>
+      <obj_property name="ObjectShortName">pc_load_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/datapath_test/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/datapath_test/mem_wren" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">mem_wren</obj_property>
+      <obj_property name="ObjectShortName">mem_wren</obj_property>
+   </wvobject>
+   <wvobject fp_name="/datapath_test/alu_bin_sel" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">alu_bin_sel</obj_property>
+      <obj_property name="ObjectShortName">alu_bin_sel</obj_property>
+   </wvobject>
+   <wvobject fp_name="/datapath_test/alu_func" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">alu_func[3:0]</obj_property>
+      <obj_property name="ObjectShortName">alu_func[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/datapath_test/opcode" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">opcode[5:0]</obj_property>
+      <obj_property name="ObjectShortName">opcode[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/datapath_test/clk_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_period</obj_property>
+      <obj_property name="ObjectShortName">clk_period</obj_property>
+   </wvobject>
+   <wvobject fp_name="/datapath_test/uut/RAM1/inst_dout" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">inst_dout[31:0]</obj_property>
+      <obj_property name="ObjectShortName">inst_dout[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+</wave_config>

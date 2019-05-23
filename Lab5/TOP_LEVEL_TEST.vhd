@@ -2,7 +2,7 @@
 -- Company: 
 -- Engineer:
 --
--- Create Date:   21:02:27 03/27/2019
+-- Create Date:   23:46:24 05/19/2019
 -- Design Name:   
 -- Module Name:   C:/Users/EKALANTAJEI/Documents/xilinx/lab3_test/TOP_LEVEL_TEST.vhd
 -- Project Name:  lab3_test
@@ -52,7 +52,7 @@ ARCHITECTURE behavior OF TOP_LEVEL_TEST IS
    signal RESET : std_logic := '0';
 
    -- Clock period definitions
-   constant CLK_period : time := 40 ns;
+   constant CLK_period : time := 50 ns;
  
 BEGIN
  
@@ -61,7 +61,7 @@ BEGIN
           CLK => CLK,
           RESET => RESET
         );
-		  
+
    -- Clock process definitions
    CLK_process :process
    begin
@@ -75,14 +75,13 @@ BEGIN
    -- Stimulus process
    stim_proc: process
    begin		
-      -- hold reset state for 100 ns.
+      -- hold reset state for 100 ns		
+		RESET <='1';
+      wait for CLK_period;
 		
-      wait for 20 ns;
-		RESET <= '1';
-		wait for CLK_period;
-		RESET <= '0';
-		
-		
+      -- insert stimulus here
+		RESET <='0';
+
       wait;
    end process;
 

@@ -1,0 +1,90 @@
+Release 13.4 - xst O.87xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/Users/EKALANTAJEI/Documents/xilinx/lab3_test/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> Parameter xsthdpdir set to C:/Users/EKALANTAJEI/Documents/xilinx/lab3_test/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/EKALANTAJEI/Documents/xilinx/lab3_test/Addition32BIT.vhd" in Library work.
+Architecture behavioral of Entity addition32bit is up to date.
+Compiling vhdl file "C:/Users/EKALANTAJEI/Documents/xilinx/lab3_test/Subtraction32BIT.vhd" in Library work.
+Architecture behavioral of Entity subtraction32bit is up to date.
+Compiling vhdl file "C:/Users/EKALANTAJEI/Documents/xilinx/lab3_test/AND32BIT.vhd" in Library work.
+Architecture behavioral of Entity and32bit is up to date.
+Compiling vhdl file "C:/Users/EKALANTAJEI/Documents/xilinx/lab3_test/OR32BIT.vhd" in Library work.
+Architecture behavioral of Entity or32bit is up to date.
+Compiling vhdl file "C:/Users/EKALANTAJEI/Documents/xilinx/lab3_test/SRARITH32BIT.vhd" in Library work.
+Architecture behavioral of Entity srarith32bit is up to date.
+Compiling vhdl file "C:/Users/EKALANTAJEI/Documents/xilinx/lab3_test/SRLOGIC.vhd" in Library work.
+Architecture behavioral of Entity srlogic is up to date.
+Compiling vhdl file "C:/Users/EKALANTAJEI/Documents/xilinx/lab3_test/SLLOGIC.vhd" in Library work.
+Architecture behavioral of Entity sllogic is up to date.
+Compiling vhdl file "C:/Users/EKALANTAJEI/Documents/xilinx/lab3_test/ROTL.vhd" in Library work.
+Architecture behavioral of Entity rotl is up to date.
+Compiling vhdl file "C:/Users/EKALANTAJEI/Documents/xilinx/lab3_test/ROTR.vhd" in Library work.
+Architecture behavioral of Entity rotr is up to date.
+Compiling vhdl file "C:/Users/EKALANTAJEI/Documents/xilinx/lab3_test/decoder5x32.vhd" in Library work.
+Architecture behavioral of Entity decoder5x32 is up to date.
+Compiling vhdl file "C:/Users/EKALANTAJEI/Documents/xilinx/lab3_test/multiplexer32to1.vhd" in Library work.
+Architecture mux of Entity multiplexer32to1 is up to date.
+Compiling vhdl file "C:/Users/EKALANTAJEI/Documents/xilinx/lab3_test/regist.vhd" in Library work.
+Architecture behavior of Entity regist is up to date.
+Compiling vhdl file "C:/Users/EKALANTAJEI/Documents/xilinx/lab3_test/MUX2TO1.vhd" in Library work.
+Architecture behavioral of Entity mux2to1 is up to date.
+Compiling vhdl file "C:/Users/EKALANTAJEI/Documents/xilinx/lab3_test/Lab1_A/ALU.vhd" in Library work.
+WARNING:HDLParsers:817 - "C:/Users/EKALANTAJEI/Documents/xilinx/lab3_test/Lab1_A/ALU.vhd" Line 239. Choice ZEROOUTPUT is not a locally static expression.
+Architecture behavioral of Entity alu is up to date.
+Compiling vhdl file "C:/Users/EKALANTAJEI/Documents/xilinx/lab3_test/Extender.vhd" in Library work.
+Architecture behavioral of Entity extender is up to date.
+Compiling vhdl file "C:/Users/EKALANTAJEI/Documents/xilinx/lab3_test/MUX64to32.vhd" in Library work.
+Architecture behavioral of Entity mux64to32 is up to date.
+Compiling vhdl file "C:/Users/EKALANTAJEI/Documents/xilinx/lab3_test/register_file.vhd" in Library work.
+Architecture behavioral of Entity register_file is up to date.
+Compiling vhdl file "C:/Users/EKALANTAJEI/Documents/xilinx/lab3_test/shiftBox.vhd" in Library work.
+Architecture behavioral of Entity shiftbox is up to date.
+Compiling vhdl file "C:/Users/EKALANTAJEI/Documents/xilinx/lab3_test/PC.vhd" in Library work.
+Architecture behavioral of Entity pc is up to date.
+Compiling vhdl file "C:/Users/EKALANTAJEI/Documents/xilinx/lab3_test/IFSTAGE.vhd" in Library work.
+Architecture behavioral of Entity ifstage is up to date.
+Compiling vhdl file "C:/Users/EKALANTAJEI/Documents/xilinx/lab3_test/DECSTAGE.vhd" in Library work.
+Architecture behavioral of Entity decstage is up to date.
+Compiling vhdl file "C:/Users/EKALANTAJEI/Documents/xilinx/lab3_test/ALUSTAGE.vhd" in Library work.
+Architecture behavioral of Entity alustage is up to date.
+Compiling vhdl file "C:/Users/EKALANTAJEI/Documents/xilinx/lab3_test/MUX10to5.vhd" in Library work.
+Architecture behavioral of Entity mux10to5 is up to date.
+Compiling vhdl file "C:/Users/EKALANTAJEI/Documents/xilinx/lab3_test/RAM.vhd" in Library work.
+Architecture syn of Entity ram is up to date.
+Compiling vhdl file "C:/Users/EKALANTAJEI/Documents/xilinx/lab3_test/regist4bits.vhd" in Library work.
+Architecture behavior of Entity regist5bits is up to date.
+Compiling vhdl file "C:/Users/EKALANTAJEI/Documents/xilinx/lab3_test/CONTROL.vhd" in Library work.
+Architecture behavioral of Entity control is up to date.
+Compiling vhdl file "C:/Users/EKALANTAJEI/Documents/xilinx/lab3_test/DATAPATH.vhd" in Library work.
+Architecture behavioral of Entity datapath is up to date.
+Compiling vhdl file "C:/Users/EKALANTAJEI/Documents/xilinx/lab3_test/TOP_LEVEL.vhd" in Library work.
+Entity <top_level> compiled.
+Entity <top_level> (Architecture <behavioral>) compiled.
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.39 secs
+ 
+--> 
+
+Total memory usage is 4495880 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

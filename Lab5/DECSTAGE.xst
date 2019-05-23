@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/demic/Downloads/lab3_test/lab3_test/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/demic/Downloads/lab3_test/lab3_test/xst"
+elaborate
+-ifn DECSTAGE.prj
+-ifmt mixed

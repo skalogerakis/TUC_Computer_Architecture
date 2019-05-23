@@ -1,0 +1,11 @@
+
+
+
+// Instantiate the module
+multiplexer1024to32 instance_name (
+    .muxIN(muxIN), 
+    .muxSEL(muxSEL), 
+    .muxOUT(muxOUT)
+    );
+
+

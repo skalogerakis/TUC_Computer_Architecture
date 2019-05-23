@@ -1,0 +1,29 @@
+Command line:
+   T_SRARITH32BIT_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  64329
+
+Wed Feb 27 01:22:29 2019
+
+
+ Elaboration Time: 0.03125 sec
+
+ Current Memory Usage: 5331.37 Meg
+
+ Total Signals          : 4
+ Total Nets             : 64
+ Total Signal Drivers   : 2
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 2
+ Total Traceable Variables  : 8
+ Total Scalar Nets and Variables : 424
+Total Line Count : 6
+
+ Total Simulation Time: 0.03125 sec
+
+ Current Memory Usage: 5331.37 Meg
+
+Wed Feb 27 01:22:33 2019
+
