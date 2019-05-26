@@ -47,8 +47,12 @@ begin
 	process(IF_ID_op, IF_ID_rs, ID_EX_rt, IF_ID_rt,PC_LDEN)
 	begin
 
-		if((IF_ID_op="001111" or IF_ID_op="000011") and ((ID_EX_rt = IF_ID_rs) or (ID_EX_rt = IF_ID_rt)) and PC_LDEN='0') then 
-			enabler<='0';
+		if(IF_ID_op="001111" and PC_LDEN='0') then
+			if((ID_EX_rt = IF_ID_rs) or (ID_EX_rt = IF_ID_rt)) then
+				enabler<='0';
+			else
+				enabler<='1';
+			end if
 		else
 			enabler<='1';
 		end if;
